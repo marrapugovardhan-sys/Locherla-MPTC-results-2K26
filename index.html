@@ -1,0 +1,1388 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101b35"><meta name="description" content="Independent Locherla MPTC election results information portal. Not an official Election Commission or government website."><meta name="referrer" content="strict-origin-when-cross-origin"><title>Locherla MPTC Election Results</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101b35;--navy2:#20365f;--gold:#e6b957;--bg:#f3f5f9;--ink:#18243b;--muted:#6e7b92;--line:#e5eaf1;--green:#16845b;--red:#bd4650;--card:#fff;--shadow:0 10px 28px #1727440c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Noto Sans Telugu",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:20;background:linear-gradient(110deg,var(--navy),#263e6b);color:white;padding:12px max(15px,calc((100vw - 1160px)/2));display:flex;justify-content:space-between;align-items:center;gap:10px;box-shadow:0 4px 16px #0d183533}.brand{display:flex;align-items:center;gap:10px;min-width:0}.seal{height:42px;width:42px;display:grid;place-items:center;border:1px solid #e6b95788;border-radius:12px;color:var(--gold);font-weight:800}.brand b{font-size:14px;display:block}.brand small{font-size:10px;color:#c4cee0}.nav{display:flex;gap:7px;align-items:center}.btn{border:0;border-radius:9px;padding:10px 13px;font-size:12px;font-weight:800}.gold{background:var(--gold);color:#1b2740}.outline{background:#ffffff12;border:1px solid #ffffff55;color:white}.light{background:#edf1f7;color:#34435e}.dark{background:var(--navy2);color:white}.danger{background:#fff0f0;color:#b43d48}.hero{background:linear-gradient(115deg,#101b35,#294777);color:white;padding:35px 18px 66px}.inner{max-width:1120px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:1.7px}.hero h1{font-size:clamp(27px,5vw,43px);line-height:1.16;margin:11px 0 8px}.hero p{color:#c7d2e6;font-size:14px;margin:0}.liveTag{display:inline-flex;gap:8px;align-items:center;margin-top:18px;padding:8px 12px;border:1px solid #ffffff30;border-radius:30px;background:#ffffff0c;color:#e4eaf5;font-size:11px}.dot{width:8px;height:8px;background:#a5b0c4;border-radius:50%}.wrap{max-width:1120px;margin:-42px auto 0;padding:0 16px 50px;position:relative}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stat,.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}
+.card.official-winner{border:2px solid #15945b;background:linear-gradient(145deg,#f0fff6,#ffffff);box-shadow:0 8px 24px rgba(13,130,75,.18);position:relative}
+.card.official-winner:before{content:"🏆 RESULT ENTERED BY ADMIN";display:block;margin:-16px -16px 13px;padding:9px 14px;border-radius:13px 13px 0 0;background:#d9f7e5;color:#087849;font-size:11px;font-weight:900;letter-spacing:.7px}
+.card.official-winner .pname{color:#087849;font-size:15px}
+.winner-announcement{background:#e3f8eb!important;border:2px solid #15945b!important;color:#075c38!important;font-weight:900}
+.stat{padding:16px}.stat small{color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.6px}.stat strong{display:block;color:var(--navy);font-size:27px;margin-top:5px}.stat em{font-style:normal;color:var(--muted);font-size:10px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:24px 0 13px}.tabs{display:flex;gap:4px;padding:4px;background:#e8edf4;border-radius:11px}.tab{border:0;border-radius:8px;padding:9px 15px;color:#56647b;background:transparent;font-weight:800;font-size:12px}.tab.active{background:white;color:var(--navy);box-shadow:0 2px 8px #17274414}.search{position:relative;flex:1;max-width:330px;min-width:200px}.search input{width:100%;padding:11px 12px 11px 34px;border:1px solid var(--line);border-radius:10px;background:white}.search span{position:absolute;left:12px;top:9px;color:#8290a6}.heading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:20px 0 12px}.heading h2{font-size:18px;color:var(--navy);margin:0}.muted{font-size:11px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{padding:16px}.cardhead{display:flex;justify-content:space-between;gap:8px}.seat{font-weight:800;color:var(--navy);font-size:14px}.sub{font-size:10px;color:var(--muted);margin-top:4px}.pill{font-size:10px;font-weight:800;padding:5px 8px;border-radius:30px;background:#edf1f7;color:#65728a;height:max-content}.pill.Won{background:#e4f5ec;color:#13734e}.pill.Counting{background:#fff3d8;color:#92690e}.pill.Leading{background:#dff5e9;color:#087849}.pill.Trailing{background:#fee2e2;color:#b42318;border:1px solid #fca5a5}.pill.Tied{background:#fff0cf;color:#8a5b00}.person{display:flex;align-items:center;gap:10px;margin-top:14px}.avatar{height:42px;width:42px;flex:none;border-radius:12px;overflow:hidden;background:#edf1f7;display:grid;place-items:center;color:#50617e;font-weight:800}.avatar img{width:100%;height:100%;object-fit:cover}.pname{font-size:13px;font-weight:800}
+ .name-overlay-wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:2px}
+.name-overlay-wrap .pname{display:inline-block}
+.name-overlay{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;text-align:center;border:1px solid rgba(180,105,0,.5);border-radius:7px;background:rgba(255,231,180,.94);color:#874900;font-size:11px;font-weight:900;letter-spacing:.55px;white-space:nowrap;pointer-events:none;box-shadow:0 2px 7px rgba(150,95,0,.12)}
+.outcome-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.outcome-actions .btn{padding:6px 10px;font-size:10px}
+.outcome-actions .selected{outline:2px solid currentColor;outline-offset:1px}
+.btn-win{background:#e2f5e9;color:#087849;border:1px solid #a8dfbc}
+.btn-lost{background:#fee2e2;color:#b42318;border:1px solid #fca5a5}
+.btn-tie{background:#fff0cf;color:#8a5b00;border:1px solid #efd18b}
+.countstate.status-notstarted{background:#fff2d8;border:2px solid #e7ad43;color:#814700;font-weight:900;font-size:13px;box-shadow:0 4px 14px rgba(150,95,0,.12)}
+.party{font-size:10px;color:var(--muted);margin-top:3px}.leadbox{display:flex;justify-content:space-between;gap:8px;align-items:center;background:#f2f8f4;border:1px solid #d9eee0;border-radius:9px;padding:8px 10px;margin-top:11px;font-size:10px;color:#42614e}.leadbox b{font-size:11px;color:#087849}.votes{display:flex;justify-content:space-between;font-size:11px;margin-top:12px;color:var(--muted)}.votes b{color:var(--ink)}.bar{height:7px;background:#edf0f5;border-radius:10px;overflow:hidden;margin-top:7px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#d4a23e,#f0cd78)}.footline{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:10px;margin-top:11px;font-size:10px;color:var(--muted)}.footline strong{color:var(--green)}.empty{grid-column:1/-1;padding:38px 14px;text-align:center;background:white;border:1px dashed #ccd5e2;border-radius:14px;color:var(--muted);font-size:12px}.count-state{font-weight:700}.notice{margin-top:17px;padding:13px 15px;border-radius:11px;background:#fff8e6;border:1px solid #f0dfb6;color:#755a1e;font-size:11px;line-height:1.6}.panel{padding:18px;margin-top:18px}.panel h2{font-size:17px;color:var(--navy);margin:0 0 5px}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:15px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:10px;font-weight:800;color:#5c6a82}.field input,.field select,.field textarea{border:1px solid #dce2ec;border-radius:9px;padding:10px;background:white;min-width:0;color:var(--ink)}.field textarea{min-height:65px;resize:vertical}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.adminrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.adminrow:last-child{border:0}.adminrow b{font-size:12px}.adminrow small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.hidden{display:none!important}.login{max-width:400px;margin:18px auto}.login .panel{padding:22px}.login .field{margin-top:12px}.footer{background:var(--navy);color:#c4cee0;text-align:center;padding:25px 15px;font-size:10px;line-height:1.8}.footer b{color:var(--gold)}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:40;background:#172747;color:white;padding:11px 15px;border-radius:9px;font-size:11px;display:none;max-width:90vw;text-align:center}.modalback{position:fixed;inset:0;background:#09132699;z-index:50;display:grid;place-items:center;padding:15px}.modal{background:white;border-radius:16px;padding:20px;max-width:390px;width:100%;box-shadow:0 18px 55px #0003}.modal h2{margin:0 0 8px;color:var(--navy)}.roundbreak{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.roundchip{font-size:10px;background:#f1f4f8;border:1px solid #e1e7ef;border-radius:7px;padding:5px 8px;color:#4e5d75}.countstate{margin:12px 0;padding:12px 14px;border-radius:11px;border:1px solid #e3e8ef;background:#fff;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.countstate b{color:var(--navy)}.countstate .notstarted{color:#9a6710}.countstate .progress{color:#087849}.countstate .completed{color:#13734e}.roundtools{display:flex;gap:7px;flex-wrap:wrap}.roundtools button{padding:7px 9px;font-size:10px}body.te{font-family:"Noto Sans Telugu","DM Sans",sans-serif}
+@media(max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.top{padding:10px 12px}.brand b{font-size:11px}.brand small{font-size:9px}.seal{height:36px;width:36px}.nav .btn{padding:8px 9px;font-size:10px}.hero{padding:28px 15px 61px}.hero h1{font-size:29px}.wrap{padding:0 11px 35px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat{padding:13px}.stat strong{font-size:24px}.toolbar{align-items:stretch}.tabs{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}.tab{padding:9px 4px}.search{max-width:none;min-width:100%}.cards{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.heading h2{font-size:16px}}
+.candidate-manage{padding:13px 0;border-bottom:1px solid var(--line)}.candidate-manage:last-child{border-bottom:0}.candidate-manage-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:4px 0 8px}.candidate-manage-head b{font-size:13px}.candidate-manage-head small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.candidate-rounds{margin-left:12px;padding-left:12px;border-left:2px solid #dce4ef}.round-adminrow{padding:8px 0}.round-adminrow b{font-size:11px}.round-adminrow .btn{padding:7px 9px;font-size:10px}
+/* Full-screen winner celebration */
+#winnerCelebration{position:fixed;inset:0;z-index:99999;overflow:hidden;pointer-events:none;background:rgba(4,12,28,.12);display:flex;align-items:center;justify-content:center}
+#winnerCelebration[hidden]{display:none}
+#winnerCelebration canvas{position:absolute;inset:0;width:100%;height:100%}
+#winnerCelebration .celebration-title{position:relative;z-index:2;max-width:min(92vw,650px);padding:18px 28px;border:1px solid rgba(255,255,255,.75);border-radius:20px;background:rgba(7,28,24,.86);box-shadow:0 12px 50px rgba(0,0,0,.3);color:#fff;text-align:center;font-weight:950;font-size:clamp(20px,4vw,38px);letter-spacing:.5px;text-shadow:0 2px 12px rgba(0,0,0,.35);animation:winnerPop .65s cubic-bezier(.2,1.5,.4,1) both}
+#winnerCelebration .winner-symbol-top{display:block;width:clamp(76px,13vw,132px);height:clamp(76px,13vw,132px);object-fit:contain;padding:8px;margin:0 auto 12px;border-radius:18px;background:rgba(255,255,255,.96);box-shadow:0 5px 24px rgba(0,0,0,.28)}
+#winnerCelebration .winner-name-line{line-height:1.2}
+#winnerCelebration .winner-official-label{display:block;margin:0 0 9px;color:#ffe49a;font-size:clamp(11px,1.7vw,15px);font-weight:900;letter-spacing:1.2px}
+#winnerCelebration .celebration-title small{display:block;margin-top:7px;font-size:clamp(12px,2vw,17px);font-weight:700;letter-spacing:1px;color:#d6ffe7}
+#winnerCelebration .flying-symbol{position:absolute;z-index:1;width:clamp(52px,8vw,100px);height:clamp(52px,8vw,100px);object-fit:contain;padding:7px;border-radius:18px;background:rgba(255,255,255,.92);box-shadow:0 5px 25px rgba(0,0,0,.25);animation:symbolFlight 5.8s ease-in-out forwards;left:var(--sx);top:var(--sy);animation-delay:var(--sd)}
+@keyframes winnerPop{0%{transform:scale(.3) rotate(-8deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
+@keyframes symbolFlight{0%{transform:translate3d(0,35vh,0) rotate(-25deg) scale(.5);opacity:0}12%{opacity:1}45%{transform:translate3d(18vw,-8vh,0) rotate(190deg) scale(1.15);opacity:1}100%{transform:translate3d(-22vw,-110vh,0) rotate(520deg) scale(.7);opacity:0}}
+@media(prefers-reduced-motion:reduce){#winnerCelebration .flying-symbol,#winnerCelebration .celebration-title{animation-duration:1ms}}
+
+
+/* Admin-controlled public maintenance screen */
+.maintenance-control{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:16px 0 20px;padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--soft, #f7f9fc)}
+.maintenance-control h3{font-size:14px;margin:0 0 4px}
+.maintenance-control p{margin:0}
+#siteUnavailableOverlay{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:22px;background:#071225;background-image:radial-gradient(circle at 50% 20%,#263b5c 0%,#101f38 48%,#050c1b 100%);color:#fff;text-align:center;isolation:isolate;opacity:1;backdrop-filter:none;-webkit-backdrop-filter:none}
+#siteUnavailableOverlay[hidden]{display:none}
+.maintenance-card{width:min(100%,560px);padding:clamp(26px,6vw,48px);border:1px solid rgba(255,255,255,.2);border-radius:24px;background:#1b2940;box-shadow:0 25px 80px rgba(0,0,0,.45);backdrop-filter:none;-webkit-backdrop-filter:none}
+.maintenance-icon{font-size:48px;margin-bottom:15px}
+.maintenance-kicker{font-size:10px;font-weight:900;letter-spacing:2px;color:#c7d6f4}
+.maintenance-card h1{font-size:clamp(25px,5vw,40px);line-height:1.12;margin:15px 0;color:#fff}
+.maintenance-card p{font-size:14px;line-height:1.7;color:#e0e8f6;margin:0 auto 24px;max-width:390px}
+.maintenance-card .btn{background:#fff!important;color:#14233d!important;border:0}
+
+
+.maintenance-admin-link{display:inline-flex;align-items:center;justify-content:center;margin-top:2px;padding:7px 12px;border:1px solid rgba(255,255,255,.34);border-radius:8px;background:rgba(255,255,255,.12);color:#e8eefb;font-size:11px;font-weight:700;letter-spacing:.15px;cursor:pointer;opacity:.88}
+.maintenance-admin-link:hover{background:rgba(255,255,255,.2);opacity:1}
+
+
+/* Animated counting status badge in the hero banner */
+.liveTag{font-size:12px;font-weight:900;letter-spacing:.45px;padding:10px 15px;border-radius:999px;transition:background .25s,border-color .25s,box-shadow .25s}
+.liveTag .dot{width:10px;height:10px;flex:0 0 10px;position:relative}
+.liveTag.status-progress{background:rgba(13,148,92,.2);border:1px solid rgba(88,235,167,.7);color:#e1ffef;box-shadow:0 0 0 0 rgba(65,220,145,.48);animation:countingBadgePulse 2s infinite}
+.liveTag.status-progress .dot{background:#4df0a2;box-shadow:0 0 0 0 rgba(77,240,162,.75);animation:countingDotPulse 1.35s infinite}
+.liveTag.status-notstarted{background:rgba(245,158,11,.18);border:1px solid rgba(255,204,105,.8);color:#fff0cb}
+.liveTag.status-notstarted .dot{background:#ffc24d;box-shadow:0 0 12px rgba(255,194,77,.8);animation:countingDotPulse 1.8s infinite}
+.liveTag.status-completed{background:rgba(212,162,62,.2);border:1px solid rgba(255,215,130,.85);color:#fff1cf}
+.liveTag.status-completed .dot{background:#ffd36d;box-shadow:0 0 12px rgba(255,211,109,.7)}
+@keyframes countingBadgePulse{0%,100%{box-shadow:0 0 0 0 rgba(65,220,145,.12)}50%{box-shadow:0 0 0 7px rgba(65,220,145,0)}}
+@keyframes countingDotPulse{0%,100%{box-shadow:0 0 0 0 currentColor;opacity:1}50%{box-shadow:0 0 0 6px transparent;opacity:.72}}
+@media(prefers-reduced-motion:reduce){.liveTag.status-progress,.liveTag .dot{animation:none}}
+
+
+.entry-section{margin:14px 0;padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--card)}
+.entry-section h4{font-size:14px;color:var(--navy);margin:0 0 5px}
+.entry-section>p{font-size:11px;margin:0 0 12px}
+.vote-entry-section{border-left:4px solid var(--gold);background:var(--soft,#f8faff)}
+
+
+/* Professional election dashboard HUD refresh */
+:root{--navy:#0b1730;--navy2:#1b3158;--gold:#e8bd63;--bg:#f2f5fa;--ink:#17243c;--muted:#718096;--line:#e3e9f2;--green:#12835b;--shadow:0 12px 34px rgba(16,34,65,.075)}
+body{background:linear-gradient(180deg,#edf2f8 0%,#f6f8fb 360px,#f3f5f9 100%);letter-spacing:.005em}
+.top{min-height:72px;padding-top:13px;padding-bottom:13px;background:linear-gradient(110deg,#09152d 0%,#14294d 55%,#203d69 100%);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 24px rgba(7,19,41,.2)}
+.seal{height:46px;width:46px;border-radius:14px;background:linear-gradient(145deg,#ffffff12,#ffffff04);box-shadow:inset 0 1px 0 #ffffff25,0 4px 12px #0002}
+.brand b{font-size:14px;letter-spacing:.35px}
+.nav .btn{min-height:40px;border-radius:11px;letter-spacing:.15px}
+.gold{background:linear-gradient(135deg,#f0cf83,#dba943);box-shadow:0 4px 12px #dba94333}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 88% 18%,rgba(98,137,194,.22),transparent 30%),linear-gradient(118deg,#0b1730 0%,#172e53 58%,#294875 100%);padding:38px 18px 78px}
+.hero:after{content:"";position:absolute;width:310px;height:310px;right:-110px;bottom:-205px;border:1px solid #ffffff16;border-radius:50%;box-shadow:0 0 0 28px #ffffff08,0 0 0 58px #ffffff05;pointer-events:none}
+.inner{position:relative;z-index:1}
+.eyebrow{letter-spacing:2.2px;font-size:10px}
+.hero h1{font-weight:800;letter-spacing:-.7px;text-shadow:0 3px 18px #0002}
+.hero p{max-width:620px;line-height:1.65}
+.liveTag{position:relative;z-index:2;min-height:40px;padding:10px 16px;border-radius:12px;font-size:11px;letter-spacing:.8px;box-shadow:0 8px 22px #0002}
+.wrap{max-width:1160px}
+.stats{gap:13px}
+.stat{position:relative;overflow:hidden;padding:18px 17px;border-radius:17px;border:1px solid #e5eaf2;box-shadow:0 10px 28px rgba(19,40,75,.055);transition:transform .2s,box-shadow .2s}
+.stat:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#e9c16d,#c9973f);opacity:.9}
+.stat small{font-size:9px;letter-spacing:1px;color:#738198}
+.stat strong{font-size:29px;letter-spacing:-.8px;margin-top:8px}
+.stat em{font-size:10px}
+.toolbar{margin-top:28px}
+.heading{margin:23px 0 14px}
+.heading h2{font-size:19px;letter-spacing:-.25px}
+.card{border-radius:18px;padding:18px;border-color:#e7ecf3;box-shadow:0 9px 26px rgba(19,40,75,.055);transition:transform .18s,box-shadow .18s}
+.cardhead .seat{letter-spacing:.1px}
+.pname{font-size:14px;letter-spacing:.05px}
+.pill{padding:6px 10px;letter-spacing:.35px}
+.panel{border-radius:17px;border-color:#e4eaf2;box-shadow:0 10px 30px rgba(19,40,75,.06)}
+.panel h2{letter-spacing:-.2px}
+.footer{background:linear-gradient(110deg,#09152d,#1a3155);border-top:1px solid #ffffff12}
+@media(hover:hover){.stat:hover,.card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(19,40,75,.09)}}
+@media(max-width:700px){
+ .top{min-height:68px;padding:9px 11px}
+ .brand{gap:8px}.brand b{font-size:10.5px;line-height:1.25}.brand small{font-size:8.5px}
+ .seal{height:39px;width:39px;border-radius:12px}
+ .nav{gap:5px}.nav .btn{min-height:38px;padding:7px 9px;font-size:9.5px}
+ .hero{padding:27px 15px 66px}.hero h1{font-size:30px;line-height:1.13}
+ .liveTag{max-width:100%;font-size:10px;padding:9px 12px}
+ .wrap{padding-left:11px;padding-right:11px}
+ .stats{gap:9px}.stat{padding:14px 12px;border-radius:15px}.stat strong{font-size:26px}
+ .cards{gap:10px}.card{padding:15px;border-radius:16px}
+}
+
+
+/* Required first-visit unofficial-site notice and terms */
+.terms-gate{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(4,11,24,.97);color:#17243c;isolation:isolate}
+.terms-gate[hidden]{display:none!important}
+.terms-shell{width:min(100%,620px);max-height:min(92dvh,850px);display:flex;flex-direction:column;padding:clamp(18px,4vw,30px);border:1px solid #dce4ef;border-radius:22px;background:#fff;box-shadow:0 30px 100px #0008;overflow:hidden}
+.terms-brand{display:flex;align-items:center;gap:10px;color:#334765;font-size:10px;font-weight:900;letter-spacing:1.1px}
+.terms-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:#102344;color:#efc56e;font-weight:900;font-size:13px}
+.terms-alert{display:flex;align-items:center;gap:9px;margin:18px 0 12px;padding:11px 12px;border:1px solid #f0c1a5;border-radius:11px;background:#fff3ed;color:#a53c20;font-size:10px;font-weight:900;letter-spacing:.65px}
+.terms-alert-icon{display:grid;place-items:center;width:21px;height:21px;flex:none;border-radius:50%;background:#b94a2a;color:white;font-size:14px}
+.terms-shell h2{font-size:clamp(20px,4vw,26px);line-height:1.2;color:#142744;margin:4px 0 7px;letter-spacing:-.4px}
+.terms-intro{font-size:12px;color:#63728a;margin:0 0 13px;line-height:1.5}
+.terms-scroll{overflow:auto;overscroll-behavior:contain;padding:13px 14px;border:1px solid #e6ebf2;border-radius:12px;background:#f8fafd}
+.terms-scroll h3{margin:0 0 5px;color:#1b3153;font-size:12px}
+.terms-scroll p{margin:0 0 13px;color:#58677e;font-size:11px;line-height:1.6}
+.terms-scroll p:last-child{margin-bottom:0}
+.terms-consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 10px;color:#253650;font-size:11px;font-weight:700;line-height:1.5}
+.terms-consent input{width:18px;height:18px;flex:none;margin:0;accent-color:#1d6d51}
+.terms-actions{display:flex;justify-content:flex-end;gap:8px}
+.terms-actions .btn{min-width:115px}
+.terms-actions button:disabled{opacity:.42;cursor:not-allowed;filter:grayscale(.3)}
+.terms-footnote{text-align:center;color:#8792a4;font-size:9px;margin:10px 0 0}
+@media(max-width:520px){.terms-gate{padding:9px}.terms-shell{max-height:94dvh;border-radius:17px;padding:16px}.terms-scroll{padding:11px}.terms-actions .btn{flex:1;min-width:0}}
+
+
+/* Compact first-open disclaimer */
+.terms-gate{padding:12px;background:rgba(4,11,24,.94)}
+.terms-shell{width:min(100%,440px);max-height:min(82dvh,620px);padding:17px 19px;border-radius:16px}
+.terms-brand{font-size:9px;gap:8px}
+.terms-mark{width:29px;height:29px;border-radius:8px;font-size:11px}
+.terms-alert{margin:11px 0 9px;padding:8px 10px;font-size:9px;gap:7px}
+.terms-alert-icon{width:18px;height:18px;font-size:12px}
+.terms-shell h2{font-size:19px;margin:3px 0 5px}
+.terms-intro{font-size:10px;margin-bottom:8px}
+.terms-scroll{display:none;max-height:44dvh;margin:0 0 10px;padding:10px 11px}
+.terms-scroll.terms-expanded{display:block}
+.terms-scroll h3{font-size:11px}
+.terms-scroll p{font-size:10px;line-height:1.5;margin-bottom:10px}
+.terms-actions{align-items:center;justify-content:space-between;margin-top:10px}
+.terms-actions .btn{min-width:94px;padding:9px 13px}
+.terms-link{color:#1769c2;text-decoration:underline;text-underline-offset:3px;font-size:11px;font-weight:800}
+.terms-link:active{color:#0c4384}
+.terms-footnote{font-size:8.5px;margin-top:8px}
+@media(max-width:520px){.terms-gate{padding:10px}.terms-shell{max-height:86dvh;padding:15px;border-radius:15px}.terms-scroll.terms-expanded{max-height:42dvh}.terms-actions .btn{flex:0 0 auto}}
+
+
+/* v33: minimal notice layout with a larger, full-width Continue button */
+.terms-gate{padding:12px!important}
+.terms-shell{
+  width:min(100%,390px)!important;
+  max-height:88dvh!important;
+  padding:16px!important;
+  border-radius:14px!important;
+  gap:0!important;
+}
+.terms-brand{font-size:8px!important;gap:7px!important}
+.terms-mark{width:25px!important;height:25px!important;font-size:10px!important}
+.terms-alert{margin:9px 0 8px!important;padding:7px 9px!important;font-size:9px!important}
+.terms-alert-icon{width:17px!important;height:17px!important}
+.terms-shell h2{font-size:18px!important;margin:2px 0 5px!important}
+.terms-intro{font-size:10px!important;line-height:1.4!important;margin:0 0 7px!important}
+.terms-scroll.terms-expanded{max-height:42dvh!important;padding:9px 10px!important}
+.terms-actions{display:flex!important;flex-direction:column-reverse!important;align-items:stretch!important;gap:11px!important;margin-top:10px!important}
+.terms-actions .btn,
+#termsAccept{
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:58px!important;
+  padding:16px 22px!important;
+  font-size:18px!important;
+  font-weight:900!important;
+  border-radius:12px!important;
+}
+.terms-link{align-self:center!important;font-size:12px!important}
+.terms-footnote{font-size:8px!important;margin-top:7px!important}
+@media(max-width:520px){
+  .terms-shell{width:min(100%,370px)!important;padding:15px!important}
+  .terms-actions .btn,#termsAccept{min-height:60px!important;font-size:18px!important}
+}
+
+
+.footer-disclaimer{
+  display:block;
+  max-width:900px;
+  margin:12px auto 0;
+  padding-top:11px;
+  border-top:1px solid rgba(255,255,255,.18);
+  color:#e1e7f0;
+  font-size:10px;
+  line-height:1.7;
+}
+
+
+/* v35: visibly separate candidate details, votes, and counting-round entry */
+.entry-section{
+  display:block;
+  margin:16px 0!important;
+  padding:16px!important;
+  border:1px solid var(--line)!important;
+  border-radius:13px!important;
+  background:var(--panel, #fff)!important;
+}
+.entry-section h4{
+  margin:0 0 7px!important;
+  padding-bottom:9px!important;
+  border-bottom:1px solid var(--line)!important;
+  font-size:15px!important;
+  font-weight:800!important;
+}
+.entry-section .muted{
+  margin:0 0 12px!important;
+  line-height:1.55!important;
+}
+.entry-section .formgrid{margin-top:0!important}
+
+
+/* v36: clear independent save workflow */
+#saveCandidate{background:#176b50!important;color:#fff!important}
+#voteCandidateSelect{font-weight:700}
+.candidate-details-section{border-left:4px solid #176b50!important}
+.vote-entry-section{border-left:4px solid #c28a28!important}
+.counting-round-entry-section{border-left:4px solid #526b91!important}
+
+
+/* v37: make candidate-detail editing obvious in Manage Candidates */
+#manage .candidate-manage .actions{display:flex;flex-wrap:wrap;gap:8px}
+#manage .candidate-manage .actions .btn{min-height:38px}
+#manage .candidate-manage .actions .btn.light{border:1px solid #9aaac0!important;color:var(--text)!important;background:var(--card)!important}
+
+
+/* v38: streamlined admin workflow order */
+.candidate-details-section{border-left:4px solid #176b50!important;margin-bottom:12px!important}
+.vote-entry-section{border-left:4px solid #c28a28!important;margin-top:12px!important}
+.vote-entry-section .formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.vote-entry-section .formgrid .field.full{grid-column:1/-1}
+@media(max-width:600px){.vote-entry-section .formgrid{grid-template-columns:1fr}}
+
+
+/* v40: physically separate vote entry from candidate details */
+#voteForm{margin:16px 0 22px}
+#candidateForm{margin-top:28px;padding-top:18px;border-top:2px solid var(--line)}
+#voteForm .vote-entry-section{margin:0!important;border-left:4px solid #c28a28!important}
+#voteForm .vote-actions{margin-top:12px}
+#candidateForm .candidate-details-section{margin:0!important;border-left:4px solid #176b50!important}
+#candidateForm .candidate-actions{margin-top:12px}
+@media(max-width:600px){
+ #voteForm .vote-actions .btn,#candidateForm .candidate-actions .btn{width:100%;min-height:48px}
+}
+
+/* v41: direct winner mode hides vote-counting UI */
+#directWinnerPanel{border-left:4px solid #15945b!important;padding:14px!important;border-radius:12px!important;background:var(--card,#fff)!important}
+#directWinnerPanel .formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#directWinnerPanel .formgrid .field.full{grid-column:1/-1}
+@media(max-width:600px){#directWinnerPanel .formgrid{grid-template-columns:1fr}}
+/* v45: expected results time below the public counting status */
+.expected-results-public{
+ display:inline-flex;align-items:center;gap:6px;
+ margin-top:7px;padding:5px 9px;
+ border:1px solid rgba(226,190,104,.48);border-radius:8px;
+ background:rgba(8,24,48,.48);color:#f7e8bd;
+ font-size:10px;font-weight:750;line-height:1.3;
+ animation:expectedBadgeIn .45s ease-out both,expectedBadgePulse 3.2s ease-in-out .5s infinite;
+}
+.expected-results-public:not([hidden])::before{content:"◷";font-size:12px}
+@keyframes expectedBadgeIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes expectedBadgePulse{0%,100%{box-shadow:0 0 0 0 rgba(226,190,104,0)}50%{box-shadow:0 0 0 3px rgba(226,190,104,.10)}}
+@media(max-width:600px){.expected-results-public{font-size:9px;max-width:100%;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.expected-results-public{animation:none}}
+/* v47: shared round selector for every candidate and NOTA */
+#voteForm #round{font-weight:750}
+#voteForm .field small{display:block;margin-top:5px;line-height:1.45}
+
+/* v49: robust, touch-friendly candidate picker */
+#voteCandidateSelect{
+ display:block!important;width:100%!important;min-height:48px!important;
+ position:relative;z-index:5;pointer-events:auto!important;
+ touch-action:manipulation;background:var(--card,#fff)!important;
+ color:var(--text)!important;opacity:1!important;
+}
+#voteForm .field.full{position:relative;z-index:4}
+#voteForm{position:relative;z-index:2}
+.remember-login{display:flex;align-items:center;gap:9px;margin:12px 0;color:var(--muted);font-size:12px}.remember-login input{width:18px;height:18px;accent-color:var(--accent)}
+/* Branded page loader and Locherla MPTC identity mark */
+.seal{padding:5px;overflow:hidden}
+.seal svg{display:block;width:100%;height:100%}
+#pageLoader{
+ position:fixed;inset:0;z-index:2147483646;display:flex;align-items:center;justify-content:center;
+ padding:24px;background:radial-gradient(circle at 50% 24%,#263f68 0%,#14294b 48%,#081329 100%);
+ color:#fff;opacity:1;visibility:visible;transition:opacity .35s ease,visibility .35s ease;
+}
+#pageLoader.loader-hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-content{display:flex;flex-direction:column;align-items:center;text-align:center;gap:13px}
+.loader-mark{width:86px;height:86px;padding:12px;border:1px solid rgba(232,189,99,.55);border-radius:24px;background:rgba(255,255,255,.08);box-shadow:0 12px 40px #0005}
+.loader-mark svg{width:100%;height:100%;display:block}
+.loader-title{font-size:clamp(15px,3vw,19px);font-weight:900;letter-spacing:1px}
+.loader-subtitle{font-size:10px;letter-spacing:2px;color:#d3deef}
+.loader-spinner{width:29px;height:29px;margin-top:8px;border:3px solid rgba(255,255,255,.2);border-top-color:#e8bd63;border-radius:50%;animation:locherlaSpin .8s linear infinite}
+@keyframes locherlaSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.loader-spinner{animation:none}}
+</style></head><body>
+<div id="pageLoader" role="status" aria-live="polite" aria-label="Loading Locherla MPTC Election Results">
+ <div class="loader-content">
+  <div class="loader-mark"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+<path d="M32 4 53 12v17c0 14-8.8 24.7-21 31C19.8 53.7 11 43 11 29V12L32 4Z" fill="#e8bd63" stroke="#fff0c8" stroke-width="2"/>
+<path d="M32 10 47 15.7v13.1c0 10.3-5.8 18.6-15 24-9.2-5.4-15-13.7-15-24V15.7L32 10Z" fill="#102344"/>
+<path d="M21 25h22v16H21z" rx="2" fill="#fff"/>
+<path d="M25 21h14v4H25z" fill="#e8bd63"/>
+<path d="m27 32 4 4 8-9" fill="none" stroke="#16845b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div>
+  <div class="loader-title">LOCHERLA MPTC</div>
+  <div class="loader-subtitle">ELECTION RESULTS PORTAL</div>
+  <div class="loader-spinner" aria-hidden="true"></div>
+  <div style="font-size:11px;color:#d3deef">Loading website…</div>
+ </div>
+</div>
+<script>
+/* Independent loader controller: does not depend on the app's main JavaScript. */
+(function () {
+  var loader = document.getElementById('pageLoader');
+  if (!loader) return;
+  var dismissed = false;
+  function dismissLoader() {
+    if (dismissed) return;
+    dismissed = true;
+    loader.classList.add('loader-hidden');
+    window.setTimeout(function () {
+      if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+    }, 500);
+  }
+  var domReady = false, appReady = !!window.__mptcAppReady, minWaitDone = false;
+  function maybeDismiss() { if (domReady && appReady && minWaitDone) dismissLoader(); }
+  function onDom() {
+    domReady = true;
+    window.setTimeout(function () { minWaitDone = true; maybeDismiss(); }, 350);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', onDom, { once: true });
+  } else {
+    onDom();
+  }
+  /* The app announces when its first load attempt (success OR failure) has been rendered. */
+  document.addEventListener('mptc-app-ready', function () { appReady = true; maybeDismiss(); });
+  /* If the app script crashes outright, do not leave visitors behind the loader. */
+  window.addEventListener('error', function () { appReady = true; maybeDismiss(); });
+  /* Hard safety limit. */
+  window.setTimeout(dismissLoader, 18000);
+})();
+</script>
+<header class="top"><div class="brand"><div class="seal" aria-label="Locherla MPTC election icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+<path d="M32 4 53 12v17c0 14-8.8 24.7-21 31C19.8 53.7 11 43 11 29V12L32 4Z" fill="#e8bd63" stroke="#fff0c8" stroke-width="2"/>
+<path d="M32 10 47 15.7v13.1c0 10.3-5.8 18.6-15 24-9.2-5.4-15-13.7-15-24V15.7L32 10Z" fill="#102344"/>
+<path d="M21 25h22v16H21z" rx="2" fill="#fff"/>
+<path d="M25 21h14v4H25z" fill="#e8bd63"/>
+<path d="m27 32 4 4 8-9" fill="none" stroke="#16845b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div><b id="brand">LOCHERLA MPTC ELECTION RESULTS</b><small id="brandSub">LOCHERLA MPTC · ANDHRA PRADESH</small></div></div><div class="nav"><button class="btn outline" id="lang">తెలుగు</button><button class="btn outline hidden" id="homeBtn" type="button">Home</button><button class="btn gold" id="adminBtn">Admin Login</button></div></header>
+<section class="hero"><div class="inner"><div class="eyebrow" id="eyebrow">ELECTION RESULTS PORTAL</div><h1 id="heroTitle">Locherla MPTC<br>Election Results</h1><p id="heroDesc">A dedicated election results dashboard for Locherla, Andhra Pradesh.</p><div class="liveTag status-progress" id="heroCountingStatus"><span class="dot" id="liveDot"></span><span id="heroTag">LOCHERLA MPTC · COUNTING IN PROGRESS</span></div><div id="expectedResultsPublic" class="expected-results-public" hidden></div></div></section>
+<main class="wrap" id="publicView">
+<section class="stats"><div class="stat"><small id="sSeats">Total entries</small><strong id="total">0</strong><em>Locherla MPTC</em></div><div class="stat"><small id="sCount">Rounds completed</small><strong id="roundsCompleted">0</strong><em>Finished counting rounds</em></div><div class="stat"><small>Rounds in progress</small><strong id="roundsInProgress">0</strong><em>Active counting rounds</em></div><div class="stat"><small>Total votes recorded</small><strong id="totalVotes">0</strong><em>Includes NOTA votes</em></div></section>
+<div class="toolbar"><div><b style="font-size:13px;color:var(--navy)">Locherla MPTC results</b><div class="muted">Only Locherla MPTC results are displayed.</div></div></div>
+<div id="publicCountState" class="notice" aria-live="polite"></div>
+<div class="heading"><h2 id="mptcHeading">MPTC Election Results</h2><span class="muted" id="mptcCount">0 entries</span></div><section class="cards" id="mptcCards"></section>
+
+</main>
+<main class="wrap hidden" id="adminView"><section class="panel"><div class="heading"><div><h2>Administrator dashboard</h2><div class="muted">Manage Locherla MPTC candidate results. Leading / trailing labels and vote margins are calculated automatically from entered votes.</div></div><button class="btn danger" id="logout">Log out</button></div>
+<section class="maintenance-control" aria-label="Website availability control">
+ <div><h3>Website availability / వెబ్‌సైట్ స్థితి</h3><p class="muted" id="availabilityStatusText">The public website is currently available.</p></div>
+ <button class="btn danger" type="button" id="toggleSiteAvailability">Set site unavailable</button>
+</section>
+<section style="margin:18px 0;padding:14px;border:1px solid var(--line);border-radius:12px;background:#f8faff"><h3 style="font-size:14px;margin:0 0 10px">Counting control / కౌంటింగ్ నియంత్రణ</h3><div class="formgrid" style="margin-top:0"><div class="field"><label>Locherla MPTC counting status</label><select id="mptcCountingStatus"><option value="Not Started">Counting Not Started Yet</option><option value="In Progress">Counting In Progress</option><option value="Completed">Counting Completed</option></select></div></div><div class="field" style="margin-top:12px"><label for="expectedResultsAt">Results expected / ఫలితాలు అంచనా సమయం</label><input id="expectedResultsAt" type="datetime-local"><small class="muted">Enter the expected date and time manually.</small></div><div class="actions"><button class="btn dark" type="button" id="saveCountingStatus">Save counting status</button><button class="btn light" type="button" id="undoCountingReset" disabled>Undo reset</button></div><p class="muted" id="undoResetHint" style="margin:8px 0 0">Undo becomes available after resetting counting.</p>
+<div class="field" style="margin-top:14px"><label for="resultMode">Result entry method / ఫలితాల నమోదు విధానం</label><select id="resultMode"><option value="votes">Enter votes by counting rounds</option><option value="direct">Declare winner directly (hide all vote totals)</option></select></div>
+<section id="directWinnerPanel" class="entry-section" style="display:none;margin-top:12px">
+ <h4>Direct Winner Declaration / విజేతను నేరుగా ప్రకటించండి</h4>
+ <p class="muted">Choose the candidate to declare as winner and enter the majority amount to display. Vote totals and round-wise votes will remain hidden on the public website.</p>
+ <div class="formgrid">
+  <div class="field full"><label for="manualWinnerSelect">Winner / విజేత</label><select id="manualWinnerSelect"><option value="">-- Select winner --</option></select></div>
+  <div class="field"><label for="manualMajority">Majority of votes / మెజారిటీ ఓట్లు</label><input id="manualMajority" type="number" min="0" step="1" placeholder="Enter majority"></div>
+ </div>
+ <div class="actions"><button class="btn dark" type="button" id="saveManualWinner">Save winner declaration</button><button class="btn light" type="button" id="clearManualWinner">Clear declaration</button></div>
+</section></section>
+<form id="voteForm"><input type="hidden" id="rid"><section class="entry-section vote-entry-section">
+ <h4>Votes &amp; Counting Round / ఓట్లు మరియు కౌంటింగ్ రౌండ్</h4>
+ <p class="muted">Select a saved candidate, enter their votes, and choose or enter the counting round.</p>
+ <div class="formgrid">
+  <div class="field full"><label>Select saved candidate / సేవ్ చేసిన అభ్యర్థిని ఎంచుకోండి</label><select id="voteCandidateSelect"><option value="">-- Select candidate --</option></select></div>
+  <div class="field"><label>Votes / ఓట్లు</label><input id="votes" type="number" min="0" value="0" required></div>
+  <div class="field"><label>Shared counting round / అందరికీ ఒకే కౌంటింగ్ రౌండ్</label><select id="round"><option value="">-- Select or create a round --</option><option value="__new__">＋ Create new round</option></select><small class="muted">Use the same round for every candidate and NOTA. Select an existing round when entering votes.</small></div>
+ </div>
+</section><div class="actions vote-actions">
+ <button class="btn" type="submit">Save Votes / ఓట్లను సేవ్ చేయండి</button>
+ <button class="btn light" type="button" id="clear">Clear</button>
+</div></form>
+
+
+<div class="heading" style="margin-top:25px"><h2 style="font-size:15px">Manage candidates</h2><span class="muted" id="countLabel"></span></div><div id="manage"></div>
+<div class="heading" style="margin-top:25px"><h2 style="font-size:15px">Edit individual round votes</h2><span class="muted">Separate from candidate details</span></div><div id="roundEntries"></div><section style="margin:18px 0;padding:14px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe"><h3 style="font-size:14px;margin:0 0 5px">Manage counting rounds / రౌండ్ల నిర్వహణ</h3><p class="muted">Rename a round to update every candidate entry in that round. You can also edit individual votes using the Edit button below.</p><div id="roundManager"></div></section>
+<form id="candidateForm"><input type="hidden" id="candidateEditId"><section class="entry-section candidate-details-section">
+ <h4>Candidate details / అభ్యర్థి వివరాలు</h4>
+ <p class="muted">Enter or update the candidate's identity and display information here. Votes and counting rounds are managed separately below.</p>
+ <div class="formgrid">
+  <div class="field"><label>Election type / ఎన్నిక రకం</label><select id="type"><option value="MPTC">Locherla MPTC</option></select></div>
+  <div class="field"><label>Seat / స్థానిక స్థానం</label><input id="seat" required value="Locherla MPTC" readonly></div>
+  <div class="field"><label>Entry type / నమోదు రకం</label><select id="entryKind"><option value="candidate">Candidate</option><option value="NOTA">NOTA</option></select></div>
+  <div class="field"><label>Candidate name / అభ్యర్థి పేరు</label><input id="candidate" required></div>
+  <div class="field"><label>Party / పార్టీ</label><input id="party" placeholder="Party or Independent"></div>
+  <input type="hidden" id="status" value="Pending">
+  <div class="field"><label>Party / Election symbol URL (optional)</label><input id="symbol" type="url" placeholder="https://example.com/symbol.png"><small class="muted">Add the candidate's party or election symbol image. It will appear beside the candidate name.</small></div>
+  <div class="field"><label>Display order</label><input id="sort" type="number" value="0"></div>
+  <div class="field full"><label>Notes / గమనికలు</label><textarea id="notes"></textarea></div>
+ </div>
+</section><div class="actions candidate-actions">
+ <button class="btn dark" type="button" id="saveCandidate">Save Candidate / అభ్యర్థిని సేవ్ చేయండి</button>
+ 
+</div></form>
+
+
+<h3 style="font-size:14px;margin:20px 0 0" id="formHeading">Add a candidate result</h3>
+</section>
+<section class="panel"><h2>Public announcement preview</h2><p class="muted">Preview the result cards as visitors see them.</p><div class="cards" id="adminPreview"></div></section>
+<section class="panel" id="visitorAnalytics"><div class="heading"><div><h2>Website Visitor Statistics</h2><div class="muted">Public website activity only · administrator dashboard views are excluded.</div></div></div><div class="stats" style="margin-top:12px"><div class="stat"><b id="uniqueVisitorCount">0</b><span>Unique visitors</span></div><div class="stat"><b id="siteOpenCount">0</b><span>Site opens</span></div></div><p class="muted" style="margin:12px 0 0">These counters are stored in this browser only. Unique visitors means distinct browser profiles on this device; visits from other phones or computers are not included without a shared online database.</p></section>
+</main>
+<section class="login hidden" id="loginView"><div class="panel"><div class="eyebrow">ADMINISTRATOR ACCESS</div><h2 style="font-size:22px;margin-top:8px">Administrator login</h2><p class="muted">Sign in to manage Locherla MPTC candidate information and results.</p><form id="loginForm"><div class="field"><label>Admin email</label><input id="username" type="email" autocomplete="username" placeholder="Your Supabase account email" required></div><div class="field"><label>Password</label><input id="password" type="password" required></div><label class="remember-login"><input type="checkbox" id="rememberAdmin"> Keep me signed in on this browser</label><div class="actions"><button class="btn dark">Sign in</button><button class="btn light" type="button" id="cancelLogin">Cancel</button></div></form><p id="loginError" style="font-size:11px;color:#b43d48"></p></div></section>
+<footer class="footer"><b>LOCHERLA · AP MPTC ELECTION RESULTS</b><br><span class="footer-disclaimer">Independent information website; not affiliated with the Election Commission of India, Andhra Pradesh State Election Commission, or any government authority. For certified results, refer to the competent election authority.</span><br>© <span id="year"></span> Copyright belongs to Govardhan Naidu Marrapu. All rights reserved.</footer><div class="toast" id="toast"></div>
+<div id="winnerCelebration" hidden aria-hidden="true">
+ <canvas id="winnerFireworks"></canvas>
+ <div class="celebration-title" id="winnerCelebrationTitle">🏆 WINNER!<small>LOCHERLA MPTC · CONGRATULATIONS</small></div>
+</div>
+<div id="siteUnavailableOverlay" hidden role="dialog" aria-modal="true" aria-labelledby="siteUnavailableTitle">
+ <div class="maintenance-card">
+  <div class="maintenance-icon">⏳</div>
+  <div class="maintenance-kicker">LOCHERLA MPTC ELECTION RESULTS</div>
+  <h1 id="siteUnavailableTitle">SITE IS CURRENTLY UNAVAILABLE</h1>
+  <p>This website is temporarily unavailable. Please check again later.</p>
+  <button class="maintenance-admin-link" type="button" id="maintenanceAdminAccess">Administrator access</button>
+ </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const $=id=>document.getElementById(id);
+const KEY="locherla_mptc_site_v3";
+// Shared election data comes ONLY from Supabase. localStorage is never read as a source of results.
+let data=[];
+let filter="all",telugu=false,admin=false;
+const SETTINGS_KEY=KEY+"_settings";
+const savedSettings={}; // defaults only; real settings are loaded from Supabase (settings object)
+let countingSettings={MPTC:savedSettings.MPTC||"In Progress",siteUnavailable:savedSettings.siteUnavailable===true,undoSnapshot:savedSettings.undoSnapshot||null,resultMode:savedSettings.resultMode||"votes",manualWinner:savedSettings.manualWinner||null,expectedResultsAt:savedSettings.expectedResultsAt||"",completedRounds:Array.isArray(savedSettings.completedRounds)?savedSettings.completedRounds:[],registeredRounds:Array.isArray(savedSettings.registeredRounds)?savedSettings.registeredRounds:[]};
+let siteUnavailable=countingSettings.siteUnavailable;
+const SUPABASE_URL="https://fjcnydbfagwsrqrsyfqi.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_cp6H332zly5nya14P9TPbg_NgrMwIXj";
+const ADMIN_UID="38992c12-fa68-4fd6-bb45-0c4d09237bac";
+let supabaseClient=null;
+try{
+ if(window.supabase&&typeof window.supabase.createClient==="function")supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+ else console.warn("Supabase library did not load; public results will be read directly from the REST endpoint.");
+}catch(e){console.warn("Supabase client could not be created",e);supabaseClient=null;}
+function requireClient(){
+ if(!supabaseClient)throw new Error("Administrator services could not load (Supabase library blocked or offline). Please check your connection and reload.");
+ return supabaseClient;
+}
+let cloudReady=false,cloudWriteQueue=Promise.resolve(),cloudSyncTimer=null;
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}if(cloudReady&&admin)queueCloudSave()}
+function queueCloudSave(){
+ if(!cloudReady||!admin||!supabaseClient)return;
+ const snapshot={candidates:data,settings:countingSettings};
+ cloudWriteQueue=cloudWriteQueue.then(async()=>{
+  try{
+   const table=supabaseClient.from("locherla_mptc_state");
+   let res=await table.upsert({id:"main",data:snapshot,updated_at:new Date().toISOString()},{onConflict:"id"}).select("id");
+   if(res.error&&/updated_at/i.test(res.error.message||"")){
+    res=await supabaseClient.from("locherla_mptc_state").upsert({id:"main",data:snapshot},{onConflict:"id"}).select("id");
+   }
+   if(res.error)throw res.error;
+   if(!Array.isArray(res.data)||!res.data.length)throw new Error("The database did not accept the save. Check administrator permissions.");
+  }catch(error){console.error("Supabase save failed",error);toast("Cloud save failed: "+(error&&error.message||error))}
+ });
+}
+function scheduleCloudSave(){if(cloudSyncTimer)clearTimeout(cloudSyncTimer);cloudSyncTimer=setTimeout(queueCloudSave,250)}
+function normalizeCloudCandidates(raw){
+ const source=Array.isArray(raw)?raw:[];
+ return source
+  .filter(r=>r && typeof r==="object")
+  .map((r,index)=>{
+   const candidate=String(r.candidate??r.candidateName??r.name??"").trim();
+   if(!candidate || /^sample candidate/i.test(candidate))return null;
+   const party=String(r.party??r.partyName??"").trim();
+   const entryKind=(String(r.entryKind||"").toUpperCase()==="NOTA" ||
+     candidate.toUpperCase()==="NOTA" || party.toUpperCase()==="NOTA")?"NOTA":"candidate";
+   return {
+    ...r,
+    id:String(r.id??("cloud-"+index)),
+    type:"MPTC",
+    seat:"Locherla MPTC",
+    candidate,
+    party,
+    entryKind,
+    candidateOnly:r.candidateOnly===true || r.candidateOnly==="true",
+    votes:Math.max(0,Number(r.votes)||0),
+    round:String(r.round??""),
+    status:String(r.status??"Pending"),
+    symbol:String(r.symbol??r.symbolUrl??""),
+    sort:Number(r.sort)||0,
+    notes:String(r.notes??"")
+   };
+  }).filter(Boolean);
+}
+
+const DEFAULT_SETTINGS=()=>({MPTC:"In Progress",siteUnavailable:false,undoSnapshot:null,resultMode:"votes",manualWinner:null,expectedResultsAt:"",completedRounds:[],registeredRounds:[]});
+let cloudState="loading",refreshing=false,publicRefreshTimer=null,retryTimer=null,pendingAdminSession=false,lastCloudSignature="",refreshHooksInstalled=false;
+function withTimeout(promise,ms,label){
+ return new Promise((resolve,reject)=>{
+  const t=setTimeout(()=>reject(new Error(label+" timed out")),ms);
+  promise.then(v=>{clearTimeout(t);resolve(v)},e=>{clearTimeout(t);reject(e)});
+ });
+}
+// Reads the shared record. Direct REST first (same public endpoint every visitor uses), supabase-js as fallback.
+// NOTE: no extra query parameters (PostgREST treats unknown parameters as column filters and returns HTTP 400).
+async function fetchCloudRow(){
+ let readError=null;
+ try{
+  const ctl=typeof AbortController!=="undefined"?new AbortController():null;
+  const timer=ctl?setTimeout(()=>ctl.abort(),8000):null;
+  let response;
+  try{
+   response=await fetch(SUPABASE_URL+"/rest/v1/locherla_mptc_state?id=eq.main&select=data",{
+    method:"GET",
+    headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Accept":"application/json"},
+    cache:"no-store",
+    signal:ctl?ctl.signal:undefined
+   });
+  }finally{if(timer)clearTimeout(timer)}
+  if(!response.ok)throw new Error("Supabase returned HTTP "+response.status+": "+(await response.text()).slice(0,200));
+  const rows=await response.json();
+  if(Array.isArray(rows)&&rows.length)return rows[0];
+  readError=new Error("No row with id 'main' was returned (check that the record exists and public read access is enabled).");
+ }catch(e){
+  readError=e;
+  console.warn("Direct public data read failed; trying Supabase client",e);
+ }
+ if(supabaseClient){
+  try{
+   const result=await withTimeout(supabaseClient.from("locherla_mptc_state").select("data").eq("id","main").maybeSingle(),8000,"Supabase client read");
+   if(result.error)throw result.error;
+   if(result.data)return result.data;
+  }catch(e){readError=readError||e;console.warn("Supabase client read failed",e)}
+ }
+ throw new Error("Could not load public election data. "+((readError&&readError.message)||"Check Supabase access."));
+}
+// Turns the stored JSONB into {data,settings} without touching page state.
+async function fetchCloudState(){
+ const cloudRow=await fetchCloudRow();
+ if(!cloudRow || !cloudRow.data)throw new Error("The shared Supabase record 'main' is missing or empty.");
+ const payload=cloudRow.data;
+ // Accept the documented JSONB shape and common wrapped shapes without changing stored data.
+ const rawCandidates=Array.isArray(payload)?payload:
+   Array.isArray(payload?.candidates)?payload.candidates:
+   Array.isArray(payload?.data?.candidates)?payload.data.candidates:
+   Array.isArray(payload?.state?.candidates)?payload.state.candidates:
+   Array.isArray(payload?.results?.candidates)?payload.results.candidates:null;
+ if(!rawCandidates)throw new Error("Supabase record found, but its candidate list is not an array.");
+ const normalized=normalizeCloudCandidates(rawCandidates);
+ if(rawCandidates.length && !normalized.length)throw new Error("Supabase returned candidate records, but none contained a usable candidate name.");
+ const incoming=(payload&&!Array.isArray(payload)&&(payload.settings||payload.data?.settings))||{};
+ const settings={...DEFAULT_SETTINGS(),...incoming};
+ settings.registeredRounds=Array.isArray(settings.registeredRounds)?settings.registeredRounds:[];
+ settings.completedRounds=Array.isArray(settings.completedRounds)?settings.completedRounds:[];
+ return {data:normalized,settings};
+}
+// Applies a fetched snapshot. The shared record is the single source of truth; local cache is write-only.
+function applyCloudState(snapshot){
+ const signature=JSON.stringify(snapshot);
+ const changed=signature!==lastCloudSignature||cloudState!=="ready";
+ lastCloudSignature=signature;
+ data=snapshot.data;
+ countingSettings=snapshot.settings;
+ siteUnavailable=countingSettings.siteUnavailable===true;
+ try{
+  localStorage.setItem(KEY,JSON.stringify(data));
+  localStorage.setItem(SETTINGS_KEY,JSON.stringify(countingSettings));
+ }catch(e){console.warn("Local cache unavailable",e);}
+ cloudReady=true;cloudState="ready";
+ return changed;
+}
+async function loadCloudState(){
+ const snapshot=await fetchCloudState();
+ applyCloudState(snapshot);
+ console.info("Public Supabase data loaded:",data.length,"candidate/result records");
+ return data.length;
+}
+function cloudStateMessage(){
+ if(cloudState==="ready")return "";
+ if(cloudState==="loading")return `<div class="empty">${telugu?"ఫలితాలు లోడ్ అవుతున్నాయి…":"Loading Locherla MPTC results…"}</div>`;
+ return `<div class="empty">${telugu?"ఫలితాలను లోడ్ చేయడం సాధ్యపడలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.":"Election results could not be loaded. Please check your connection."}<br><br><button class="btn dark" type="button" onclick="retryCloudLoad()">${telugu?"మళ్లీ ప్రయత్నించండి":"Try again"}</button></div>`;
+}
+function scheduleRetry(){
+ if(retryTimer||admin)return;
+ retryTimer=setTimeout(()=>{retryTimer=null;refreshPublicData()},8000);
+}
+window.retryCloudLoad=function(){
+ if(cloudState!=="ready"){cloudState="loading";render();}
+ refreshPublicData(true);
+};
+// Public visitors: re-read the shared record. Never runs for the administrator (would overwrite unsaved edits)
+// and never blanks cards that were already loaded if a refresh fails.
+async function refreshPublicData(force){
+ if(admin||refreshing)return;
+ if(document.hidden&&!force&&cloudState==="ready")return;
+ refreshing=true;
+ try{
+  const snapshot=await fetchCloudState();
+  if(admin)return;
+  const changed=applyCloudState(snapshot);
+  if(retryTimer){clearTimeout(retryTimer);retryTimer=null}
+  if(pendingAdminSession){pendingAdminSession=false;admin=true;setLang();showAdmin();}
+  else if(changed||force===true){render();syncSiteAvailability();}
+ }catch(e){
+  console.warn("Public data refresh failed",e);
+  if(cloudState!=="ready"){cloudState="error";cloudReady=false;try{render()}catch(_){}scheduleRetry();}
+ }finally{refreshing=false}
+}
+function startPublicRefresh(){
+ if(refreshHooksInstalled)return;
+ refreshHooksInstalled=true;
+ publicRefreshTimer=setInterval(()=>refreshPublicData(),30000);
+ document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshPublicData()});
+ window.addEventListener("online",()=>refreshPublicData(true));
+ window.addEventListener("pageshow",ev=>{if(ev.persisted)refreshPublicData(true)});
+}
+function markAppReady(){
+ window.__mptcAppReady=true;
+ try{document.dispatchEvent(new Event("mptc-app-ready"))}catch(e){}
+}
+async function detectAdminSession(){
+ if(!supabaseClient)return false;
+ try{
+  const sessionResult=await supabaseClient.auth.getSession();
+  const session=sessionResult?.data?.session||null;
+  if(session&&session.user&&session.user.id===ADMIN_UID)return true;
+  if(session){try{await supabaseClient.auth.signOut();}catch(_){}}
+ }catch(authError){console.warn("Auth session check unavailable; continuing as public visitor",authError);}
+ return false;
+}
+async function bootstrapCloud(){
+ cloudState="loading";
+ const cards=$("mptcCards");
+ if(cards)cards.innerHTML=cloudStateMessage();
+ const sessionPromise=withTimeout(detectAdminSession(),6000,"Auth session check").catch(()=>false);
+ let loadError=null;
+ try{await loadCloudState();}
+ catch(err){loadError=err;cloudState="error";cloudReady=false;console.error("Public election data load error:",err.message||err);}
+ const sessionIsAdmin=await sessionPromise;
+ admin=!!(sessionIsAdmin&&!loadError);
+ pendingAdminSession=!!(sessionIsAdmin&&loadError);
+ try{setLang();}catch(e){console.error("setLang failed",e);}
+ try{if(admin)showAdmin();else showHome();}
+ catch(e){console.error("Initial render failed",e);$("publicView").classList.remove("hidden");}
+ if(loadError)scheduleRetry();
+ startPublicRefresh();
+ markAppReady();
+}
+
+// Public visitor counters: count a public page opening after a short delay.
+// Opening the administrator login cancels the pending count.
+const VISITOR_STATS_KEY=KEY+"_visitor_stats_v1";
+let visitorCountTimer=null;
+function readVisitorStats(){
+ try{return JSON.parse(localStorage.getItem(VISITOR_STATS_KEY)||"null")||{uniqueVisitors:0,siteOpens:0,visitorSeen:false};}
+ catch(e){return {uniqueVisitors:0,siteOpens:0,visitorSeen:false};}
+}
+function countPublicVisit(){
+ const stats=readVisitorStats();
+ stats.siteOpens=(+stats.siteOpens||0)+1;
+ if(!stats.visitorSeen){stats.uniqueVisitors=(+stats.uniqueVisitors||0)+1;stats.visitorSeen=true;}
+ localStorage.setItem(VISITOR_STATS_KEY,JSON.stringify(stats));
+}
+function updateVisitorStats(){
+ const stats=readVisitorStats();
+ const unique=$("uniqueVisitorCount"),opens=$("siteOpenCount");
+ if(unique)unique.textContent=(+stats.uniqueVisitors||0).toLocaleString("en-IN");
+ if(opens)opens.textContent=(+stats.siteOpens||0).toLocaleString("en-IN");
+}
+function schedulePublicVisitCount(){
+ if(admin||siteUnavailable)return;
+ if(visitorCountTimer)clearTimeout(visitorCountTimer);
+ visitorCountTimer=setTimeout(()=>{visitorCountTimer=null;if(!admin&&!$("loginView").classList.contains("hidden"))return;if(!admin&&!$("publicView").classList.contains("hidden"))countPublicVisit();},5000);
+}
+// (No default or locally cached candidate records are created here; the shared Supabase record is authoritative.)
+function saveSettings(){try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(countingSettings))}catch(e){}if(cloudReady&&admin)scheduleCloudSave()}
+function allRoundNames(){
+ const names=[...(countingSettings.registeredRounds||[]),...data.filter(r=>r&&!r.candidateOnly&&r.round).map(r=>r.round)];
+ return [...new Set(names.map(x=>String(x||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:"base"}));
+}
+
+saveSettings();
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(s){$("toast").textContent=s;$("toast").style.display="block";setTimeout(()=>$("toast").style.display="none",2300)}
+const tx={en:{brand:"LOCHERLA MPTC ELECTION RESULTS",sub:"LOCHERLA MPTC · ANDHRA PRADESH",eyebrow:"ELECTION RESULTS PORTAL",title:"Locherla MPTC<br>Election Results",desc:"Independent public information dashboard displaying Locherla MPTC results entered by the site administrator.",tag:"LOCHERLA MPTC · ELECTION RESULTS",seats:"Total candidates",count:"Counting",all:"All",mptc:"MPTC",heading:"Locherla MPTC election results",search:"Search candidate or party",disclaimer:"",empty:"No results match your search."},te:{brand:"లోచర్ల ఎంపీటీసీ ఎన్నికల ఫలితాలు",sub:"లోచర్ల ఎంపీటీసీ · ఆంధ్రప్రదేశ్",eyebrow:"ఎన్నికల ఫలితాల పోర్టల్",title:"లోచర్ల ఎంపీటీసీ<br>ఎన్నికల ఫలితాలు",desc:"స్వతంత్ర సమాచార వెబ్‌సైట్ · నిర్వాహకుడు నమోదు చేసిన లోచర్ల ఎంపీటీసీ ఫలితాలు.",tag:"స్వతంత్ర సమాచార వెబ్‌సైట్ · నిర్వాహకుడు నమోదు చేసిన ఫలితాలు",seats:"మొత్తం అభ్యర్థులు",won:"ప్రకటించిన విజేతలు",count:"కౌంటింగ్",pending:"పెండింగ్",all:"అన్నీ",mptc:"ఎంపీటీసీ",heading:"లోచర్ల ఎంపీటీసీ ఎన్నికల ఫలితాలు",search:"అభ్యర్థి లేదా పార్టీ వెతకండి",disclaimer:"ఇది స్వతంత్ర సమాచార వెబ్‌సైట్ మాత్రమే; ఎన్నికల సంఘం లేదా ప్రభుత్వ అధికారిక వెబ్‌సైట్ కాదు. ఇక్కడ చూపిన వివరాలు నిర్వాహకుడు నమోదు చేసినవి. ధృవీకరించిన ఫలితాల కోసం సంబంధిత ఎన్నికల అధికారులను సంప్రదించండి."}};
+function tr(k){return tx[telugu?"te":"en"][k]||tx.en[k]}
+function aggregateResults(entries){
+ const map=new Map();
+ for(const r of entries){
+  const candidateName=(r.candidate||"").trim().toLowerCase();
+  const inferredKind=(r.entryKind==="NOTA"||candidateName==="nota"||(r.party||"").trim().toLowerCase()==="nota")?"NOTA":"candidate";
+  const key=[r.type,r.seat,candidateName,inferredKind].join("|");
+  if(!map.has(key)) map.set(key,{...r,votes:0,rounds:[],roundTotals:{},notesList:[],roundCount:0,sourceIds:[]});
+  const a=map.get(key);
+  if(r.party&&!a.party)a.party=r.party;
+  if(r.symbol)a.symbol=r.symbol;
+  if(r.candidateOnly){
+   if(r.notes && !a.notesList.includes(r.notes)) a.notesList.push(r.notes);
+   a.sourceIds.push(r.id);
+   a.entryKind=inferredKind;
+   continue;
+  }
+  if(!a.party&&r.party)a.party=r.party;
+  a.entryKind=inferredKind;
+  a.votes+=(+r.votes||0);
+  a.roundCount++;
+  const roundName=r.round||"Round not labelled";
+  a.roundTotals[roundName]=(a.roundTotals[roundName]||0)+(+r.votes||0);
+  if(r.round && !a.rounds.includes(r.round)) a.rounds.push(r.round);
+  if(r.notes && !a.notesList.includes(r.notes)) a.notesList.push(r.notes);
+  a.sourceIds.push(r.id);
+  if(r.status==="Won") a.status="Won";
+  else if(a.status!=="Won" && r.status==="Counting") a.status="Counting";
+  else if(!a.status) a.status="Pending";
+  if(r.symbol)a.symbol=r.symbol;
+  if(r.sort!==undefined)a.sort=Math.min(a.sort??Infinity,+r.sort||0);
+ }
+ return [...map.values()].map(a=>({...a,roundLabel:a.rounds.length?a.rounds.join(", "):"—",notes:a.notesList.join(" · ")}));
+}
+function card(x,allEntries){
+ let group=allEntries.filter(y=>y.seat===x.seat&&y.type===x.type);
+ const isNotaRow=y=>(y.entryKind==="NOTA"||String(y.candidate||"").trim().toUpperCase()==="NOTA"||String(y.party||"").trim().toUpperCase()==="NOTA");
+ const eligible=group.filter(y=>!isNotaRow(y));
+ let ordered=[...eligible].sort((a,b)=>(+b.votes||0)-(+a.votes||0));
+ let topVotes=ordered.length?(+ordered[0].votes||0):0;
+ let leaders=ordered.filter(y=>(+y.votes||0)===topVotes && topVotes>0);
+ let winner=group.find(y=>y.status==="Won");
+ const countingCompleted=countingSettings.MPTC==="Completed";
+ const directMode=countingSettings.resultMode==="direct";
+ const manualWinner=countingSettings.manualWinner;
+ const isManualWinner=!!(directMode&&manualWinner&&manualWinner.candidate===x.candidate&&manualWinner.party===x.party&&manualWinner.entryKind===x.entryKind);
+ const officialWinner=directMode?isManualWinner:(countingCompleted&&leaders.length===1&&leaders[0].candidate===x.candidate&&leaders[0].party===x.party&&leaders[0].entryKind===x.entryKind);
+ const officialTie=countingCompleted&&leaders.length>1&&leaders.some(y=>y.candidate===x.candidate&&y.party===x.party&&y.entryKind===x.entryKind);
+ let totalVotes=group.reduce((sum,y)=>sum+(+y.votes||0),0);
+ let myVotes=+x.votes||0;
+ let isTop=leaders.some(y=>y.candidate===x.candidate&&y.party===x.party);
+ let secondVotes=ordered.find(y=>!(y.candidate===x.candidate&&y.party===x.party));
+ secondVotes=secondVotes?(+secondVotes.votes||0):0;
+ let margin=Math.max(0,myVotes-secondVotes);
+ let share=totalVotes?myVotes/totalVotes*100:0;
+ let stateLabel=x.status, stateClass=x.status, leadText="";
+ const explicitOutcomes=group.map(y=>y.outcome).filter(Boolean);
+ const explicitOutcome=explicitOutcomes.length?explicitOutcomes[explicitOutcomes.length-1]:"";
+ const countingNotStarted=countingSettings.MPTC==="Not Started";
+ if(directMode){
+   if(isManualWinner){
+     stateLabel="WINNER";
+     stateClass="Won";
+     leadText=`Winner · Majority: ${(+manualWinner.majority||0).toLocaleString("en-IN")} votes`;
+   }else{
+     stateLabel=countingCompleted?"RESULT COMPLETED":"AWAITING";
+     stateClass="Pending";
+     leadText=countingCompleted?"Counting completed":"";
+   }
+ }else if(countingNotStarted){
+   stateLabel="NOT STARTED";stateClass="Pending";leadText="";
+ }else if(countingCompleted){
+   if(officialWinner){stateLabel="WINNER";stateClass="Won";leadText=`Winner · Majority: ${(myVotes-secondVotes).toLocaleString("en-IN")} votes`;}
+   else if(officialTie){stateLabel="TIED";stateClass="Tied";leadText="Highest votes — tied result";}
+   else{stateLabel="RESULT COMPLETED";stateClass="Pending";leadText="Counting completed";}
+ }else if(winner){
+   stateLabel=x.status==="Won"?"WON":"RESULT DECLARED";
+   stateClass=x.status==="Won"?"Won":"Pending";
+   if(x.status==="Won") leadText=`Winning margin: ${margin.toLocaleString("en-IN")} votes`;
+ }else if(topVotes>0 && isTop){
+   stateLabel=leaders.length>1?"TIED":"MAJORITY";
+   stateClass=leaders.length>1?"Tied":"Leading";
+   leadText=leaders.length>1?`Tied — no majority`:`Majority: ${(myVotes-secondVotes).toLocaleString("en-IN")} votes`;
+ }else if(topVotes>0 && myVotes>0){
+   stateLabel="TRAILING";stateClass="Trailing";
+   leadText=`Behind by ${(topVotes-myVotes).toLocaleString("en-IN")} votes`;
+ }else if(x.status==="Counting"){
+   stateLabel="COUNTING";stateClass="Counting";
+ }else{stateLabel="AWAITING";stateClass="Pending";}
+ const isNota=(x.entryKind==="NOTA"||String(x.candidate||"").trim().toUpperCase()==="NOTA");
+ const notaSymbol="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/NOTA_Option_Logo_3x4.svg/1920px-NOTA_Option_Logo_3x4.svg.png";
+ let img=isNota?`<img src="${notaSymbol}" alt="NOTA election symbol" onerror="this.parentElement.textContent='NOTA'">`:x.symbol?`<img src="${esc(x.symbol)}" alt="${esc(x.candidate||"Candidate")} symbol" onerror="this.parentElement.textContent='${esc((x.candidate||"?").slice(0,1))}'">`:esc((x.candidate||"?").slice(0,1));
+ return `<article class="card${officialWinner?" official-winner":""}">
+  <div class="cardhead"><div><div class="seat">${esc(x.seat)}</div><div class="sub">${esc(x.type)} · LOCHERLA</div></div><span class="pill ${stateClass}">${stateLabel}</span></div>
+  <div class="person"><div class="avatar">${img}</div><div><div class="name-overlay-wrap"><div class="pname">${esc(x.candidate)}</div>${countingNotStarted?`<div class="name-overlay">COUNTING NOT STARTED</div>`:""}</div><div class="party">${esc(x.party||"Party not specified")}${(x.entryKind==="NOTA"||x.candidate==="NOTA")?" · NOTA":""}</div></div></div>
+  ${!directMode?`<div class="roundbreak" aria-label="Round-wise votes">${Object.entries(x.roundTotals||{}).map(([rn,rv])=>`<span class="roundchip">${esc(rn)}: <b>${(+rv).toLocaleString("en-IN")}</b></span>`).join("")}</div>`:""}
+  ${leadText?`<div class="leadbox"><span>${esc(leadText)}</span><b>${stateLabel==="MAJORITY"||stateLabel==="TIED"?"★":stateLabel==="WON"?"✓":""}</b></div>`:""}
+  ${!directMode?`<div class="votes"><span>Total votes polled for candidate / అభ్యర్థికి వచ్చిన మొత్తం ఓట్లు</span><b>${myVotes.toLocaleString("en-IN")}</b></div>
+  <div class="bar"><i style="width:${Math.min(100,share)}%"></i></div>
+  <div class="footline"><span>${x.roundCount} round entr${x.roundCount===1?"y":"ies"}</span><strong>${share.toFixed(1)}% of ${totalVotes.toLocaleString("en-IN")} seat votes</strong></div>`:""}
+  ${x.notes?`<div class="sub" style="margin-top:9px">${esc(x.notes)}</div>`:""}
+ </article>`;
+}
+
+let lastCelebratedWinnerKey="";
+let celebrationFrame=0;
+function launchWinnerCelebration(winner){
+ const key=[winner.candidate,winner.party,winner.votes,winner.symbol||"",countingSettings.resultMode,countingSettings.manualWinner?.majority].join("|");
+ if(key===lastCelebratedWinnerKey)return;
+ lastCelebratedWinnerKey=key;
+ const layer=$("winnerCelebration"),canvas=$("winnerFireworks"),ctx=canvas.getContext("2d");
+ if(!layer||!canvas||!ctx)return;
+ layer.querySelectorAll(".flying-symbol").forEach(n=>n.remove());
+ const title=$("winnerCelebrationTitle");
+ const majority=countingSettings.resultMode==="direct"
+  ? (+countingSettings.manualWinner?.majority||0)
+  : Math.max(0,(+winner.votes||0)-((aggregateResults(data)
+      .filter(x=>!(x.entryKind==="NOTA"||String(x.candidate||"").trim().toUpperCase()==="NOTA"))
+      .sort((a,b)=>(+b.votes||0)-(+a.votes||0))[1]?.votes)||0));
+ const partyName=(winner.party||"").trim();
+ const symbolMarkup=winner.symbol?`<img class="winner-symbol-top" src="${esc(winner.symbol)}" alt="${esc(winner.candidate||"Winner")} election symbol" onerror="this.style.display='none'">`:"";
+ title.innerHTML=`${symbolMarkup}<small class="winner-official-label">RESULT ENTERED BY ADMIN</small><div class="winner-name-line">🏆 ${esc(winner.candidate)}${partyName?` (${esc(partyName)})`:""}</div><small>MAJORITY: ${majority.toLocaleString("en-IN")} VOTES</small>`;
+ layer.hidden=false;
+ canvas.width=window.innerWidth* Math.max(1,window.devicePixelRatio||1);
+ canvas.height=window.innerHeight* Math.max(1,window.devicePixelRatio||1);
+ ctx.setTransform(Math.max(1,window.devicePixelRatio||1),0,0,Math.max(1,window.devicePixelRatio||1),0,0);
+ const w=window.innerWidth,h=window.innerHeight;
+ const confetti=Array.from({length:230},()=>({x:Math.random()*w,y:-Math.random()*h,vx:(Math.random()-.5)*3,vy:2+Math.random()*5,size:4+Math.random()*7,rot:Math.random()*6.28,spin:(Math.random()-.5)*.2,life:Math.random()*1.8+1.2}));
+ let sparks=[],lastBurst=0,start=performance.now(),alive=true;
+ const symbol=winner.symbol||"";
+ for(let i=0;i<7;i++){
+   const img=document.createElement("img");
+   img.className="flying-symbol";
+   img.alt="Winner election symbol";
+   img.src=symbol||"";
+   if(!symbol){img.remove();continue;}
+   img.style.setProperty("--sx",`${5+Math.random()*85}%`);
+   img.style.setProperty("--sy",`${55+Math.random()*35}%`);
+   img.style.setProperty("--sd",`${i*.22}s`);
+   img.onerror=()=>img.remove();
+   layer.appendChild(img);
+ }
+ function burst(x,y){
+   const hue=Math.floor(Math.random()*360);
+   for(let i=0;i<65;i++){
+     const a=Math.random()*Math.PI*2,spd=1.2+Math.random()*5;
+     sparks.push({x,y,vx:Math.cos(a)*spd,vy:Math.sin(a)*spd,life:55+Math.random()*35,max:90,hue,size:1.5+Math.random()*2.8});
+   }
+ }
+ function frame(now){
+   if(!alive)return;
+   ctx.clearRect(0,0,w,h);
+   const elapsed=now-start;
+   if(now-lastBurst>430){burst(w*(.12+Math.random()*.76),h*(.12+Math.random()*.48));lastBurst=now;}
+   for(const p of confetti){
+     p.x+=p.vx+Math.sin(elapsed/350+p.rot)*.8;p.y+=p.vy;p.rot+=p.spin;
+     ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);
+     ctx.fillStyle=`hsl(${(p.rot*90+elapsed/10)%360},95%,${55+Math.sin(p.rot)*12}%)`;
+     ctx.fillRect(-p.size/2,-p.size/2,p.size,p.size*1.7);ctx.restore();
+     if(p.y>h+20){p.y=-20;p.x=Math.random()*w;}
+   }
+   sparks=sparks.filter(p=>p.life>0);
+   for(const p of sparks){
+     p.x+=p.vx;p.y+=p.vy;p.vx*=.985;p.vy=p.vy*.985+.035;p.life--;
+     ctx.beginPath();ctx.fillStyle=`hsla(${p.hue},100%,65%,${Math.max(0,p.life/p.max)})`;ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();
+   }
+   if(elapsed<6800){celebrationFrame=requestAnimationFrame(frame);}
+   else{
+     alive=false;cancelAnimationFrame(celebrationFrame);
+     layer.querySelectorAll(".flying-symbol").forEach(n=>n.remove());
+     setTimeout(()=>{layer.hidden=true;ctx.clearRect(0,0,w,h);},700);
+   }
+ }
+ cancelAnimationFrame(celebrationFrame);
+ celebrationFrame=requestAnimationFrame(frame);
+}
+
+
+function updateUndoResetControl(){
+ const button=$("undoCountingReset");
+ const hint=$("undoResetHint");
+ if(!button)return;
+ const available=!!countingSettings.undoSnapshot;
+ button.disabled=!available;
+ if(hint)hint.textContent=available?"A previous counting state is saved. Undo will restore its votes, rounds and outcomes.":"No counting reset to undo.";
+}
+function resetCountingProgress(){
+ // Save a complete copy before touching votes or round progress.
+ countingSettings.undoSnapshot={
+   data:JSON.parse(JSON.stringify(data)),
+   previousStatus:countingSettings.MPTC,
+   savedAt:new Date().toISOString()
+ };
+ data=data.map(row=>{
+   const next={...row,votes:0,round:"",status:"Pending"};
+   delete next.outcome;
+   return next;
+ });
+ countingSettings.MPTC="Not Started";
+ persist();
+ saveSettings();
+}
+function undoCountingReset(){
+ const snapshot=countingSettings.undoSnapshot;
+ if(!snapshot||!Array.isArray(snapshot.data))return;
+ if(!confirm("Restore the previous counting progress, votes, rounds and outcomes?"))return;
+ data=JSON.parse(JSON.stringify(snapshot.data));
+ countingSettings.MPTC=snapshot.previousStatus||"In Progress";
+ countingSettings.undoSnapshot=null;
+ persist();
+ saveSettings();
+ $("mptcCountingStatus").value=countingSettings.MPTC;
+ $("expectedResultsAt").value=countingSettings.expectedResultsAt||"";
+ $("resultMode").value=countingSettings.resultMode||"votes";
+ $("voteForm").style.display=countingSettings.resultMode==="direct"?"none":"";
+ $("directWinnerPanel").style.display=countingSettings.resultMode==="direct"?"block":"none";
+ const winnerSelect=$("manualWinnerSelect");
+ const priorWinner=winnerSelect.value;
+ winnerSelect.innerHTML='<option value="">-- Select winner --</option>'+publicRows.filter(x=>!(x.entryKind==="NOTA"||String(x.candidate||"").trim().toUpperCase()==="NOTA")).map(x=>`<option value="${esc(x.sourceIds[0]||"")}">${esc(x.candidate)} · ${esc(x.party||"Party not specified")}</option>`).join("");
+ if(priorWinner&&[...winnerSelect.options].some(o=>o.value===priorWinner))winnerSelect.value=priorWinner;
+ $("manualMajority").value=countingSettings.manualWinner?.majority??"";
+ updateUndoResetControl();
+ render();
+ toast("Previous counting progress restored.");
+}
+
+function populateVoteCandidateOptions(){
+ const select=$("voteCandidateSelect");
+ if(!select)return;
+ const previous=select.value;
+ const candidates=new Map();
+ data.filter(r=>r&&String(r.candidate||"").trim()).forEach(r=>{
+  const key=[r.type||"MPTC",r.seat||"Locherla MPTC",(r.candidate||"").trim().toLowerCase(),(r.party||"").trim().toLowerCase(),r.entryKind||"candidate"].join("|");
+  if(!candidates.has(key))candidates.set(key,r);
+ });
+ const list=[...candidates.values()].sort((a,b)=>(+a.sort||0)-(+b.sort||0)||(a.candidate||"").localeCompare(b.candidate||""));
+ select.innerHTML='<option value="">-- Select candidate --</option>'+list.map(r=>
+  `<option value="${esc(r.id)}">${esc(r.candidate)} · ${esc(r.party||"Party not specified")}</option>`
+ ).join("");
+ if(previous&&[...select.options].some(o=>o.value===previous))select.value=previous;
+ select.disabled=list.length===0;
+}
+
+function render(){
+ const publicRows=aggregateResults(data);
+ $("total").textContent=publicRows.length;
+ const knownRounds=new Set([...(countingSettings.registeredRounds||[]),...data.filter(r=>!r.candidateOnly&&r.round).map(r=>r.round)]);
+ $("roundsCompleted").textContent=[...(countingSettings.completedRounds||[])].filter(rn=>knownRounds.has(rn)).length;
+ const activeRoundNames=[...knownRounds].filter(rn=>!(countingSettings.completedRounds||[]).includes(rn));
+ $("roundsInProgress").textContent=activeRoundNames.length;
+ const activeRoundsSub=$("roundsInProgress").parentElement.querySelector("em");
+ if(activeRoundsSub)activeRoundsSub.textContent=activeRoundNames.length?activeRoundNames.join(", "):"No active rounds";
+ const roundsStat=$("roundsInProgress").closest(".stat");
+ if(roundsStat)roundsStat.style.display=countingSettings.resultMode==="direct"?"none":"";
+ $("totalVotes").textContent=data.reduce((sum,x)=>sum+(+x.votes||0),0).toLocaleString("en-IN");
+ const totalVotesStat=$("totalVotes").closest(".stat");
+ if(totalVotesStat)totalVotesStat.style.display=countingSettings.resultMode==="direct"?"none":"";
+ const statusText=v=>v==="Not Started"?"Counting Not Started Yet":v==="Completed"?"Counting Completed":"Counting In Progress";
+ $("publicCountState").className="notice countstate"+(countingSettings.MPTC==="Not Started"?" status-notstarted":"");
+ const completedEligible=publicRows.filter(x=>!(x.entryKind==="NOTA"||String(x.candidate||"").trim().toUpperCase()==="NOTA"||String(x.party||"").trim().toUpperCase()==="NOTA")).sort((a,b)=>(+b.votes||0)-(+a.votes||0));
+ const selectedManualWinner=countingSettings.manualWinner?publicRows.find(x=>x.candidate===countingSettings.manualWinner.candidate&&x.party===countingSettings.manualWinner.party&&x.entryKind===countingSettings.manualWinner.entryKind):null;
+ const completedTop=completedEligible.length?(+completedEligible[0].votes||0):0;
+ const completedLeaders=completedEligible.filter(x=>(+x.votes||0)===completedTop&&completedTop>0);
+ let completionMessage="";
+ if(countingSettings.MPTC==="Completed"){
+   if(countingSettings.resultMode==="direct"&&selectedManualWinner) completionMessage=`<div class="winner-announcement" style="margin-top:9px;padding:10px 12px;border-radius:9px">🏆 DECLARED WINNER: ${esc(selectedManualWinner.candidate)} · Majority: ${(+countingSettings.manualWinner.majority||0).toLocaleString("en-IN")} votes</div>`;
+   else if(countingSettings.resultMode==="direct") completionMessage=`<div class="winner-announcement" style="margin-top:9px;padding:10px 12px;border-radius:9px">Winner not selected yet. Set a winner in the administrator dashboard.</div>`;
+   else if(completedLeaders.length===1) completionMessage=`<div class="winner-announcement" style="margin-top:9px;padding:10px 12px;border-radius:9px">🏆 DECLARED WINNER: ${esc(completedLeaders[0].candidate)} · ${completedTop.toLocaleString("en-IN")} votes</div>`;
+   else if(completedLeaders.length>1) completionMessage=`<div class="winner-announcement" style="margin-top:9px;padding:10px 12px;border-radius:9px">TIE: ${completedLeaders.map(x=>esc(x.candidate)).join(", ")} · ${completedTop.toLocaleString("en-IN")} votes each</div>`;
+   else completionMessage=`<div style="margin-top:8px">No winner can be determined because no candidate votes have been recorded.</div>`;
+ }
+ const heroStatus=$("heroCountingStatus");
+ const heroLabel=$("heroTag");
+ const heroStateClass=countingSettings.MPTC==="Not Started"?"status-notstarted":countingSettings.MPTC==="Completed"?"status-completed":"status-progress";
+ heroStatus.classList.remove("status-notstarted","status-completed","status-progress");
+ heroStatus.classList.add(heroStateClass);
+ heroLabel.textContent=countingSettings.MPTC==="Not Started"?"LOCHERLA MPTC · COUNTING NOT STARTED":countingSettings.MPTC==="Completed"?"LOCHERLA MPTC · COUNTING COMPLETED":"LOCHERLA MPTC · COUNTING IN PROGRESS";
+ if(cloudState!=="ready"){heroLabel.textContent=cloudState==="loading"?"LOCHERLA MPTC · LOADING RESULTS":"LOCHERLA MPTC · RESULTS TEMPORARILY UNAVAILABLE";}
+ const expectedPublic=$("expectedResultsPublic");
+ if(countingSettings.expectedResultsAt && countingSettings.MPTC!=="Completed"){
+  const expectedDate=new Date(countingSettings.expectedResultsAt);
+  expectedPublic.textContent="Results expected · "+expectedDate.toLocaleString("en-IN",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:true});
+  expectedPublic.hidden=false;
+ }else{expectedPublic.textContent="";expectedPublic.hidden=true;}
+ $("publicCountState").innerHTML=completionMessage;
+ $("publicCountState").style.display=completionMessage?"block":"none";
+ $("mptcCountingStatus").value=countingSettings.MPTC;
+ $("resultMode").value=countingSettings.resultMode||"votes";
+ $("voteForm").style.display=countingSettings.resultMode==="direct"?"none":"";
+ $("directWinnerPanel").style.display=countingSettings.resultMode==="direct"?"block":"none";
+ const winnerSelect=$("manualWinnerSelect");
+ const priorWinner=winnerSelect.value;
+ winnerSelect.innerHTML='<option value="">-- Select winner --</option>'+publicRows.filter(x=>!(x.entryKind==="NOTA"||String(x.candidate||"").trim().toUpperCase()==="NOTA")).map(x=>`<option value="${esc(x.sourceIds[0]||"")}">${esc(x.candidate)} · ${esc(x.party||"Party not specified")}</option>`).join("");
+ if(priorWinner&&[...winnerSelect.options].some(o=>o.value===priorWinner))winnerSelect.value=priorWinner;
+ $("manualMajority").value=countingSettings.manualWinner?.majority??"";
+ const rounds=allRoundNames();
+ $("roundManager").innerHTML=rounds.length?rounds.map(rn=>{const n=data.filter(r=>!r.candidateOnly&&r.round===rn).length;const done=countingSettings.completedRounds.includes(rn);return `<div class="adminrow"><div><b>Locherla MPTC · ${esc(rn)}</b><small>${n} candidate/NOTA round entries · <strong style="color:${done?'#15803d':'#b45309'}">${done?'ROUND COMPLETED':'NOW COUNTING'}</strong></small></div><div class="roundtools"><button class="btn ${done?'light':'gold'}" onclick="toggleRoundCompleted(decodeURIComponent('${encodeURIComponent(rn)}'))">${done?'Reopen round':'Mark round completed'}</button><button class="btn light" onclick="renameRound('MPTC',decodeURIComponent('${encodeURIComponent(rn)}'))">Rename round</button><button class="btn danger" onclick="removeRound('MPTC',decodeURIComponent('${encodeURIComponent(rn)}'))">Delete this round</button></div></div>`}).join(""):`<div class="empty">No rounds created yet.</div>`;
+ let filtered=[...publicRows].sort((a,b)=>(Number(a.sort)||0)-(Number(b.sort)||0)||(a.candidate||"").localeCompare(b.candidate||""));
+ $("mptcCount").textContent=filtered.length+" candidates";
+ const cloudMsg=cloudStateMessage();
+ $("mptcCards").innerHTML=cloudMsg?cloudMsg:(filtered.length?filtered.map(x=>card(x,publicRows)).join(""):`<div class="empty">No MPTC results published yet.</div>`);
+ $("adminPreview").innerHTML=cloudMsg?cloudMsg:(publicRows.length?publicRows.map(x=>card(x,publicRows)).join(""):`<div class="empty">No entries yet.</div>`);
+ if(countingSettings.MPTC==="Completed"&&countingSettings.resultMode==="direct"&&selectedManualWinner){
+   launchWinnerCelebration(selectedManualWinner);
+ }else if(countingSettings.MPTC==="Completed"&&completedLeaders.length===1){
+   launchWinnerCelebration(completedLeaders[0]);
+ }else{
+   lastCelebratedWinnerKey="";
+ }
+
+ $("manage").innerHTML=publicRows.length?publicRows.map(candidate=>`
+  <div class="candidate-manage"><div class="candidate-manage-head"><div><b>${esc(candidate.candidate)}</b><small>Locherla MPTC · ${esc(candidate.party||"Party not specified")} · <strong>${(+candidate.votes).toLocaleString("en-IN")} total votes</strong></small></div><span class="pill">${candidate.roundCount} round${candidate.roundCount===1?"":"s"}</span></div>
+  <div class="actions"><button class="btn light" type="button" onclick="editCandidateDetails('${candidate.sourceIds[0]}')">✎ Edit candidate details</button><button class="btn dark" type="button" onclick="addRoundForCandidate('${candidate.sourceIds[0]}')">＋ Add votes for this candidate</button></div></div>`).join(""):`<div class="empty">No candidates added yet.</div>`;
+ const voteRows=data.filter(r=>!r.candidateOnly);
+ $("roundEntries").innerHTML=voteRows.length?voteRows.map(r=>`
+  <div class="adminrow round-adminrow"><div><b>${esc(r.round||"Round not labelled")} · ${esc(r.candidate)}</b><small>${esc(r.party||"Party not specified")} · ${(+r.votes).toLocaleString("en-IN")} votes · ${esc(r.status)}</small></div><div class="actions"><button class="btn light" onclick="editRow('${r.id}')">Edit votes / round</button><button class="btn danger" onclick="deleteRow('${r.id}')">Delete entry</button></div></div>`).join(""):`<div class="empty">No round entries yet.</div>`;
+ const roundSelect=$("round");
+ if(roundSelect){
+  const priorRound=roundSelect.value;
+  const sharedRounds=allRoundNames();
+  roundSelect.innerHTML='<option value="">-- Select or create a round --</option>'+sharedRounds.map(rn=>`<option value="${esc(rn)}">${esc(rn)}</option>`).join("")+'<option value="__new__">＋ Create new round</option>';
+  if(priorRound&&priorRound!=="__new__"&&sharedRounds.includes(priorRound))roundSelect.value=priorRound;
+ }
+ populateVoteCandidateOptions();
+ $("countLabel").textContent=publicRows.length+" candidates · "+voteRows.length+" round entries";
+}
+function setLang(){$("brand").textContent=tr("brand");$("brandSub").textContent=tr("sub");$("eyebrow").textContent=tr("eyebrow");$("heroTitle").innerHTML=tr("title");$("heroDesc").textContent=tr("desc");$("heroTag").textContent=tr("tag");$("sSeats").textContent=tr("seats");$("sCount").textContent=tr("count");$("mptcHeading").textContent=telugu?"ఎంపీటీసీ ఎన్నికల ఫలితాలు":"MPTC Election Results";const disclaimerEl=$("disclaimer");if(disclaimerEl&&tr("disclaimer"))disclaimerEl.textContent=tr("disclaimer");$("lang").textContent=telugu?"English":"తెలుగు";document.body.classList.toggle("te",telugu);render()}
+$("lang").onclick=()=>{telugu=!telugu;setLang()};
+
+function syncSiteAvailability(){
+ const overlay=$("siteUnavailableOverlay");
+ if(!overlay)return;
+ const publicVisible=!$("publicView").classList.contains("hidden");
+ overlay.hidden=!(siteUnavailable&&!admin&&publicVisible);
+ const status=$("availabilityStatusText");
+ const toggle=$("toggleSiteAvailability");
+ if(status)status.textContent=siteUnavailable?"The public website is currently unavailable. Visitors see a full-screen maintenance screen.":"The public website is currently available.";
+ if(toggle)toggle.textContent=siteUnavailable?"Make website available":"Set site unavailable";
+ if(toggle){toggle.classList.toggle("danger",!siteUnavailable);toggle.classList.toggle("dark",siteUnavailable);}
+}
+
+function showLogin(){
+ if(visitorCountTimer){clearTimeout(visitorCountTimer);visitorCountTimer=null;}
+ $("publicView").classList.add("hidden");
+ $("adminView").classList.add("hidden");
+ $("loginView").classList.remove("hidden");
+ $("homeBtn").classList.add("hidden");
+ $("siteUnavailableOverlay").hidden=true;
+ window.scrollTo(0,0);
+}
+function showAdmin(){
+ if(!admin)return;
+ $("loginView").classList.add("hidden");
+ $("publicView").classList.add("hidden");
+ $("adminView").classList.remove("hidden");
+ $("homeBtn").classList.remove("hidden");
+ $("adminBtn").textContent="Admin Dashboard";
+ $("adminBtn").classList.add("outline");
+ $("adminBtn").classList.remove("gold");
+ render();
+ syncSiteAvailability();
+ updateVisitorStats();
+ window.scrollTo(0,0);
+}
+function showHome(){
+ $("adminView").classList.add("hidden");
+ $("loginView").classList.add("hidden");
+ $("publicView").classList.remove("hidden");
+ // Keep the authenticated admin session active; returning to the dashboard will not ask for login again.
+ $("homeBtn").classList.add("hidden");
+ if(admin){
+  $("adminBtn").textContent="Admin Dashboard";
+  $("adminBtn").classList.add("outline");
+  $("adminBtn").classList.remove("gold");
+ }else{
+  $("adminBtn").textContent="Admin Login";
+  $("adminBtn").classList.add("gold");
+  $("adminBtn").classList.remove("outline");
+ }
+ render();
+ syncSiteAvailability();
+ window.scrollTo(0,0);
+}
+$("adminBtn").onclick=()=>{
+ if(admin){showAdmin();return;}
+ showLogin();
+};
+$("homeBtn").onclick=showHome;
+$("cancelLogin").onclick=showHome;
+$("maintenanceAdminAccess").onclick=showLogin;
+$("loginForm").onsubmit=async e=>{
+ e.preventDefault();
+ const submit=$("loginForm").querySelector('button[type="submit"],button:not([type])');
+ if(submit){submit.disabled=true;submit.textContent="Signing in…"}
+ try{
+  const {data:authData,error}=await requireClient().auth.signInWithPassword({email:$("username").value.trim(),password:$("password").value});
+  if(error)throw error;
+  if(!authData.user||authData.user.id!==ADMIN_UID){await supabaseClient.auth.signOut();throw new Error("This account is not authorized as the election administrator.")}
+  admin=true;
+  try{await loadCloudState();}catch(loadErr){admin=false;throw loadErr;}
+  const {data:row}=await supabaseClient.from("locherla_mptc_state").select("data").eq("id","main").maybeSingle();
+  if(!row||!row.data||!Array.isArray(row.data.candidates))queueCloudSave();
+  $("loginError").textContent="";showAdmin();
+ }catch(err){$("loginError").textContent=err.message||"Login failed. Check your email and password."}
+ finally{if(submit){submit.disabled=false;submit.textContent="Sign in"}}
+};
+$("logout").onclick=async()=>{
+ // Let any pending admin save reach Supabase while the admin session is still valid.
+ if(cloudSyncTimer){clearTimeout(cloudSyncTimer);cloudSyncTimer=null;queueCloudSave();}
+ try{await cloudWriteQueue}catch(_){}
+ try{if(supabaseClient)await supabaseClient.auth.signOut();}catch(e){console.warn("Sign-out issue",e)}
+ admin=false;
+ $("rememberAdmin").checked=false;$("password").value="";
+ $("homeBtn").classList.add("hidden");showHome();
+ refreshPublicData(true);
+};
+$("entryKind").onchange=()=>{const nota=$("entryKind").value==="NOTA";if(nota){$("candidate").value="NOTA";$("party").value="NOTA";$("symbol").value="";$("candidate").readOnly=true;$("party").readOnly=true;$("symbol").disabled=true}else{$("candidate").readOnly=false;$("party").readOnly=false;$("symbol").disabled=false;if($("candidate").value==="NOTA")$("candidate").value="";if($("party").value==="NOTA")$("party").value=""}};
+$("type").onchange=()=>{$("seat").value="Locherla MPTC"};
+function readCandidateDetails(){
+ return {
+  type:"MPTC",entryKind:$("entryKind").value,seat:"Locherla MPTC",
+  candidate:$("candidate").value.trim(),party:$("party").value.trim(),
+  status:"Pending",symbol:$("symbol").value.trim(),sort:+$("sort").value,
+  notes:$("notes").value.trim()
+ };
+}
+window.editCandidateDetails=id=>{
+ const row=data.find(r=>r.id===id);
+ if(!row)return;
+ $("candidateEditId").value=id;
+ $("rid").value="";
+ $("type").value=row.type||"MPTC";
+ $("seat").value="Locherla MPTC";
+ $("entryKind").value=row.entryKind||((row.candidate==="NOTA"||row.party==="NOTA")?"NOTA":"candidate");
+ $("entryKind").dispatchEvent(new Event("change"));
+ $("candidate").value=row.candidate||"";
+ $("party").value=row.party||"";
+ $("symbol").value=row.symbol||"";
+ $("sort").value=row.sort??0;
+ $("notes").value=row.notes||"";
+ $("formHeading").textContent="Edit candidate details · "+(row.candidate||"");
+ $("saveCandidate").textContent="Update Candidate Details / అభ్యర్థి వివరాలను నవీకరించండి";
+ $("candidateForm").scrollIntoView({behavior:"smooth",block:"start"});
+ $("candidate").focus();
+ toast("Edit the fields under Candidate Details, then press Update Candidate Details.");
+};
+$("saveCandidate").onclick=()=>{
+ const c=readCandidateDetails();
+ if(!c.candidate){$("candidate").focus();toast("Enter the candidate name first.");return;}
+ const editId=$("candidateEditId").value;
+ if(editId){
+  const original=data.find(r=>r.id===editId);
+  if(!original){toast("Candidate record not found.");return;}
+  const oldName=(original.candidate||"").trim().toLowerCase();
+  const oldParty=(original.party||"").trim().toLowerCase();
+  const oldKind=original.entryKind||"candidate";
+  const group=data.filter(r=>r.type===original.type&&r.seat===original.seat&&
+   (r.candidate||"").trim().toLowerCase()===oldName&&
+   (r.party||"").trim().toLowerCase()===oldParty&&
+   (r.entryKind||"candidate")===oldKind);
+  group.forEach(r=>Object.assign(r,c));
+  $("candidateEditId").value="";
+  $("saveCandidate").textContent="Save Candidate / అభ్యర్థిని సేవ్ చేయండి";
+  $("formHeading").textContent="Add a candidate result";
+  persist();render();clearForm();
+  toast("Candidate details updated across all counting rounds.");
+ }else{
+  const duplicate=data.find(r=>r.type===c.type&&r.seat===c.seat&&
+   (r.candidate||"").trim().toLowerCase()===c.candidate.toLowerCase()&&
+   (r.party||"").trim().toLowerCase()===c.party.toLowerCase()&&
+   (r.entryKind||"candidate")===c.entryKind);
+  if(duplicate){
+   toast("This candidate already exists. Use Edit candidate details in Manage Candidates.");
+   return;
+  }
+  data.push({id:"c"+Date.now(),...c,votes:0,round:"",candidateOnly:true});
+  persist();populateVoteCandidateOptions();render();
+  toast("Candidate saved successfully. Now select the candidate under Votes.");
+ }
+ $("voteCandidateSelect").value=(data.find(r=>r.candidateOnly&&r.candidate.toLowerCase()===c.candidate.toLowerCase()&&
+  (r.party||"").toLowerCase()===c.party.toLowerCase())||data.find(r=>r.candidate.toLowerCase()===c.candidate.toLowerCase()))?.id||"";
+};
+$("voteCandidateSelect").onfocus=populateVoteCandidateOptions;
+$("voteCandidateSelect").onclick=populateVoteCandidateOptions;
+$("voteCandidateSelect").onchange=()=>{
+ const selected=data.find(r=>r.id===$("voteCandidateSelect").value);
+ if(!selected)return;
+ const group=data.filter(r=>r.type==="MPTC"&&r.seat==="Locherla MPTC"&&
+  (r.candidate||"").trim().toLowerCase()===selected.candidate.toLowerCase()&&
+  (r.party||"").trim().toLowerCase()===(selected.party||"").trim().toLowerCase()&&
+  (r.entryKind||"candidate")===(selected.entryKind||"candidate"));
+ const base=group[0]||selected;
+ $("voteCandidateSelect").value=base.id;
+ $("candidate").value=base.candidate||"";
+ $("party").value=base.party||"";
+ $("entryKind").value=base.entryKind||"candidate";
+ $("entryKind").dispatchEvent(new Event("change"));
+ $("symbol").value=base.symbol||"";
+ $("sort").value=base.sort||0;
+ $("notes").value=base.notes||"";
+};
+$("round").onchange=()=>{
+ if($("round").value!=="__new__")return;
+ const name=prompt("Enter the new shared counting round name (example: Round 1):");
+ if(!name||!name.trim()){
+  $("round").value="";
+  return;
+ }
+ const clean=name.trim();
+ const exists=[...$("round").options].some(o=>o.value.toLowerCase()===clean.toLowerCase());
+ if(exists){
+  const option=[...$("round").options].find(o=>o.value.toLowerCase()===clean.toLowerCase());
+  $("round").value=option.value;
+  toast("This shared round already exists. Select it for every candidate and NOTA.");
+  return;
+ }
+ const option=document.createElement("option");
+ option.value=clean;option.textContent=clean;
+ countingSettings.registeredRounds=[...new Set([...(countingSettings.registeredRounds||[]),clean])];
+ countingSettings.completedRounds=(countingSettings.completedRounds||[]).filter(rn=>rn!==clean);
+ saveSettings();
+ $("round").insertBefore(option,$("round").querySelector('option[value="__new__"]'));
+ $("round").value=clean;
+ toast("Shared counting round created. Use it for every candidate and NOTA.");
+};
+$("voteForm").onsubmit=e=>{
+ e.preventDefault();
+ const selected=data.find(r=>r.id===$("voteCandidateSelect").value);
+ if(!selected){
+  toast("Please select a saved candidate in the Votes section.");
+  $("voteCandidateSelect").focus();return;
+ }
+ const c={
+  type:selected.type||"MPTC",entryKind:selected.entryKind||"candidate",
+  seat:selected.seat||"Locherla MPTC",candidate:selected.candidate||"",
+  party:selected.party||"",status:"Pending",symbol:selected.symbol||"",
+  sort:+selected.sort||0,notes:selected.notes||""
+ };
+ const roundName=$("round").value.trim();
+ if(!roundName||roundName==="__new__"){toast("Select a shared counting round first.");$("round").focus();return;}
+ const votes=Math.max(0,+$("votes").value||0);
+ const editingId=$("rid").value;
+ const sameCandidateRound=r=>!r.candidateOnly&&r.type===selected.type&&r.seat===selected.seat&&
+  (r.candidate||"").trim().toLowerCase()===(selected.candidate||"").trim().toLowerCase()&&
+  (r.party||"").trim().toLowerCase()===(selected.party||"").trim().toLowerCase()&&
+  (r.entryKind||"candidate")===(selected.entryKind||"candidate")&&r.round===roundName;
+ if(editingId){
+  const i=data.findIndex(r=>r.id===editingId);
+  if(i>=0){
+   const duplicate=data.findIndex(r=>r.id!==editingId&&sameCandidateRound(r));
+   if(duplicate>=0){toast("This candidate already has an entry in that round. Edit the existing entry instead.");return;}
+   data[i]={...data[i],...c,id:editingId,votes,round:roundName,candidateOnly:false,status:"Counting"};
+  }
+ }else{
+  const existingIndex=data.findIndex(sameCandidateRound);
+  if(existingIndex>=0){
+   data[existingIndex]={...data[existingIndex],...c,votes,round:roundName,candidateOnly:false,status:"Counting"};
+  }else{
+   data.push({id:"r"+Date.now(),...c,votes,round:roundName,candidateOnly:false,status:"Counting"});
+  }
+ }
+ persist();clearForm();render();
+ toast("Votes saved for the selected candidate and counting round.");
+};
+function clearForm(){$("voteForm").reset();$("candidateForm").reset();$("candidateEditId").value="";$("saveCandidate").textContent="Save Candidate / అభ్యర్థిని సేవ్ చేయండి";$("voteCandidateSelect").value="";$("type").value="MPTC";$("seat").value="Locherla MPTC";$("rid").value="";$("votes").value=0;$("sort").value=0;$("candidate").readOnly=false;$("party").readOnly=false;$("symbol").disabled=false;$("formHeading").textContent="Add a candidate result"}$("clear").onclick=clearForm;
+window.editRow=id=>{let x=data.find(y=>y.id===id);if(!x)return;$("rid").value=x.id;$("voteCandidateSelect").value=x.id;$("type").value=x.type;$("seat").value="Locherla MPTC";$("entryKind").value=x.entryKind||((x.candidate==="NOTA"||x.party==="NOTA")?"NOTA":"candidate");$("entryKind").dispatchEvent(new Event("change"));$("seat").value=x.seat;$("candidate").value=x.candidate;$("party").value=x.party;$("votes").value=x.votes;$("round").value=x.round;$("status").value=x.status;$("symbol").value=x.symbol||"";$("sort").value=x.sort;$("notes").value=x.notes;$("entryKind").dispatchEvent(new Event("change"));$("formHeading").textContent="Edit candidate result";$("voteForm").scrollIntoView({behavior:"smooth"})};
+window.addRoundForCandidate=id=>{
+ const base=data.find(r=>r.id===id);if(!base)return;
+ clearForm();
+ $("entryKind").value=base.entryKind||((base.candidate==="NOTA"||base.party==="NOTA")?"NOTA":"candidate");
+ $("entryKind").dispatchEvent(new Event("change"));
+ $("candidate").value=base.candidate||"";
+ $("party").value=base.party||"";
+ $("symbol").value=base.symbol||"";
+ $("sort").value=base.sort||0;
+ $("notes").value=base.notes||"";
+ $("votes").value=0;
+ const sharedRound=data.length?(data[data.length-1].round||"Round 1"):"Round 1";
+ $("round").value=sharedRound;
+ $("status").value=base.status||"Counting";
+ $("formHeading").textContent="Add votes · "+base.candidate+" · "+sharedRound;
+ $("voteForm").scrollIntoView({behavior:"smooth",block:"start"});
+ $("votes").focus();
+ $("votes").select();
+ toast("Candidate and shared round filled in. Just enter this candidate's votes.");
+};
+window.deleteRow=id=>{if(confirm("Delete this candidate result?")){data=data.filter(x=>x.id!==id);persist();render();toast("Entry deleted")}};
+
+$("resultMode").onchange=()=>{
+ countingSettings.resultMode=$("resultMode").value;
+ if(countingSettings.resultMode!=="direct")countingSettings.manualWinner=null;
+ saveSettings();render();
+ toast(countingSettings.resultMode==="direct"?"Direct winner mode enabled. Vote totals are hidden.":"Vote-counting mode enabled.");
+};
+$("saveManualWinner").onclick=()=>{
+ const selected=data.find(r=>r.id===$("manualWinnerSelect").value);
+ if(!selected){toast("Select a winner first.");return;}
+ const majority=$("manualMajority").value.trim();
+ if(majority===""){toast("Enter the majority amount.");$("manualMajority").focus();return;}
+ countingSettings.manualWinner={candidate:selected.candidate,party:selected.party||"",entryKind:selected.entryKind||"",majority:Math.max(0,Number(majority)||0),symbol:selected.symbol||""};
+ countingSettings.MPTC="Completed";
+ $("mptcCountingStatus").value="Completed";
+ saveSettings();render();
+ toast("Winner declaration saved.");
+};
+$("clearManualWinner").onclick=()=>{
+ if(!confirm("Clear the direct winner declaration?"))return;
+ countingSettings.manualWinner=null;
+ if(countingSettings.MPTC==="Completed")countingSettings.MPTC="In Progress";
+ $("mptcCountingStatus").value=countingSettings.MPTC;
+ saveSettings();render();toast("Winner declaration cleared.");
+};
+$("saveCountingStatus").onclick=()=>{
+ countingSettings.expectedResultsAt=$("expectedResultsAt").value||"";
+ const requested=$("mptcCountingStatus").value;
+ if(requested==="Not Started"&&countingSettings.MPTC!=="Not Started"){
+   const ok=confirm("Reset counting progress? All recorded votes will become 0, round names and round outcomes will be cleared, and candidate details will be kept. You can use Undo reset to restore the previous progress.");
+   if(!ok){$("mptcCountingStatus").value=countingSettings.MPTC;return;}
+   resetCountingProgress();
+   render();
+   toast("Counting reset. Candidate details were kept; use Undo reset to restore progress.");
+   return;
+ }
+ countingSettings.MPTC=requested;
+ saveSettings();
+ render();
+ toast("Counting status updated");
+};
+$("undoCountingReset").onclick=undoCountingReset;
+$("toggleSiteAvailability").onclick=()=>{
+ siteUnavailable=!siteUnavailable;
+ countingSettings.siteUnavailable=siteUnavailable;
+ saveSettings();
+ syncSiteAvailability();
+ toast(siteUnavailable?"Public website set to unavailable":"Public website is now available");
+};
+window.toggleRoundCompleted=(roundName)=>{const completed=new Set(countingSettings.completedRounds||[]);if(completed.has(roundName)){completed.delete(roundName);toast("Round reopened");}else{completed.add(roundName);toast("Round marked completed");}countingSettings.completedRounds=[...completed];saveSettings();render();};
+window.renameRound=(type,oldName)=>{
+ const next=prompt("Edit the counting round name:",oldName);
+ if(next===null)return;
+ const clean=next.trim();
+ if(!clean){alert("Round name cannot be empty.");return;}
+ if(clean!==oldName&&allRoundNames().some(x=>x.toLowerCase()===clean.toLowerCase())){alert("A round with that name already exists.");return;}
+ data.forEach(r=>{if(r.type===type&&String(r.round||"").trim()===oldName)r.round=clean;});
+ countingSettings.registeredRounds=[...new Set([...(countingSettings.registeredRounds||[]).filter(x=>x!==oldName),clean])];
+ if((countingSettings.completedRounds||[]).includes(oldName)){
+  countingSettings.completedRounds=countingSettings.completedRounds.filter(x=>x!==oldName);
+  countingSettings.completedRounds.push(clean);
+ }
+ saveSettings();persist();render();toast("Round name updated");
+};
+window.removeRound=(type,roundName)=>{
+ const matches=data.filter(r=>r.type===type&&String(r.round||"").trim()===roundName);
+ const registered=(countingSettings.registeredRounds||[]).includes(roundName);
+ if(!matches.length&&!registered){toast("Round not found. Refresh and try again.");render();return;}
+ if(!confirm("Delete "+roundName+(matches.length?" and its "+matches.length+" candidate/NOTA entries":"")+"? This cannot be undone."))return;
+ data=data.filter(r=>!(r.type===type&&String(r.round||"").trim()===roundName));
+ countingSettings.completedRounds=(countingSettings.completedRounds||[]).filter(x=>x!==roundName);
+ countingSettings.registeredRounds=(countingSettings.registeredRounds||[]).filter(x=>x!==roundName);
+ saveSettings();persist();render();toast("Round deleted");
+};
+$("year").textContent=new Date().getFullYear();
+$("publicView").classList.add("hidden");$("loginView").classList.add("hidden");$("adminView").classList.add("hidden");
+// Wait for the shared cloud record before the first public render.
+bootstrapCloud().then(()=>{syncSiteAvailability();updateVisitorStats();schedulePublicVisitCount()}).catch(err=>{console.error("Startup failed",err);try{$("publicView").classList.remove("hidden");}catch(_){}markAppReady();});
+
+// Loader dismissal is handled by the independent early loader controller.
+
+</script>
+</body></html>
